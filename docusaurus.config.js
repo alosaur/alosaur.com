@@ -31,6 +31,12 @@ module.exports = {
           label: 'Docs',
         },
         {
+          type: 'doc',
+          docId: 'sponsors',
+          position: 'left',
+          label: 'Sponsors',
+        },
+        {
           type: 'localeDropdown',
           position: 'right',
         },
