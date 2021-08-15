@@ -47,6 +47,8 @@ export interface HookTarget<TState, TPayload> {
 
 ## Request
 
+**AlosaurRequest**
+
 Этот объект включает параметры запроса:
 
 ```ts
@@ -58,6 +60,8 @@ public async body(): unknown // Parse body with RequestBodyParseOptions
 ```
 
 ## Response
+
+**AlosaurResponse**
 
 Этот объект включает параметры ответа сервера и создается на моменте запроса и может формировать различные состояния в себе.
 
