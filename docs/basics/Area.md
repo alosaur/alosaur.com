@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Area
 
-This is the application area that normally registers controllers and defines route behavior for the controllers in it.
+This is the application area that registers controllers and defines route behavior for the controllers in it.
 
 An Area is not a module in the classic sense; it cannot be embedded in other Areas.
 

@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Dependency injection
 
-Dependency injection (DI), or dependency injection, is a mechanism for making objects that interact in an application loosely coupled. Such objects are linked through abstractions, such as interfaces, which makes the whole system more flexible, more adaptable, and more extensible.
+Dependency injection (DI) is a mechanism for making objects that interact in an application loosely coupled. Such objects are linked through abstractions, such as interfaces, which makes the whole system more flexible, more adaptable, and more extensible.
 
 Often special containers - IoC-containers (Inversion of Control) - are used to set dependencies in such systems. Such containers serve as a kind of factories that establish dependencies between abstractions and concrete objects, and usually manage the creation of these objects.
 
