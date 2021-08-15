@@ -4,13 +4,13 @@ sidebar_position: 5
 
 # Microservice
 
-Microservices in Alosaur are implemented as a server, but use a different transport, not HTTP, to communicate between clients. 
+Микросервисы в Alosaur реализованы как сервер но для связи между клиентами в отличии от основного используют другой транспорт, не HTTP. 
 
-Microservices maintain the same structure as a regular http server, except for the controller methods.
+Микросервисы поддерживают такую же структуру как и обычый http сервер, за исключением методов контроллера.
 
 ### Server
 
-To create a normal microservice, you need to create this application and start listening to events.
+Для создания обычного микросервиса необходимо создать это приложение и приступить к прослушке событий.
 
 ```jsx
 import { Microservice, MicroserviceType } from "alosaur/microservice/mod.ts";
@@ -30,9 +30,9 @@ await server.listen();
 
 ### Controller actions
 
-**@MPattern -** is a method decorator that can accept Object
+**@MPattern -** это декоратор метода который может принимать Object
 
-**@MEvent -** is a method decorator that can take string
+**@MEvent -** это декоратор метода который может принимать string
 
 ```jsx
 import { Area, Body, Controller } from "alosaur/mod.ts";
@@ -59,7 +59,7 @@ export class HomeArea {}
 
 ### Client
 
-We will use the usual Alosaur application as an example and create a default client.
+Для примера мы будем использовать обычное приложение Alosaur, и в качестве примера создадим клиент по умолчанию.
 
 ```jsx
 import { App } from "alosaur/mod.ts";
@@ -80,7 +80,7 @@ const app = new App({
 app.listen();
 ```
 
-Using the client inside the application:
+Использование клиента внутри приложения:
 
 ```jsx
 import { Area, Controller, Get, Inject } from "alosaur/mod.ts";
@@ -104,4 +104,4 @@ export class CoreController {
 export class CoreArea {}
 ```
 
-Full application example: [https://github.com/alosaur/alosaur/tree/master/examples/microservice](https://github.com/alosaur/alosaur/tree/master/examples/microservice)
+Полный пример приложения: [https://github.com/alosaur/alosaur/tree/master/examples/microservice](https://github.com/alosaur/alosaur/tree/master/examples/microservice)

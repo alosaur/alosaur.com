@@ -5,17 +5,17 @@ sidebar_position: 2
 # SSE (Server Sent Events)
 
 :::danger
-Currently not working with Deno native http
+В данный момент не работает с Deno native http
 :::
 
-SSE is a technology for sending notifications from the server to the web browser as DOM events.
+SSE представляет собой технологию отправки уведомлений от сервера к веб-браузеру в виде DOM-событий.
 
-SSE in Alosaur is organized like normal Middleware.
+SSE в Alosaur организуется как обычный Middleware.
 
-Use `context.response.setNotRespond()` to interrupt the request in Middleware
+Используйте `context.response.setNotRespond()` для прерывания запроса в Middleware
 
 :::important
-You can read more about `context.response.setNotRespond()` in [Middleware](/docs/basics/Middleware).
+Более подробно про `context.response.setNotRespond()` вы можете прочитать в разделе [Middleware](/docs/basics/Middleware).
 :::
 
 ```jsx

@@ -4,30 +4,29 @@ sidebar_position: 1
 
 # Intro
 
-Alosaur - это фреймворк чтобы строить масштабируемые приложения на Deno. Deno - в первую очередь это современный хост для выполнения TypeScript/ JS кода на серверной машине имеющий свои преимущества над другими. [Deno](https://deno.land)
+Alosaur is a framework for building scalable applications on Deno. Deno is primarily a modern host for running TypeScript/ JS code on a server machine and has its own advantages over others. [Deno](https://deno.land)
 
-Alosaur предоставляет из коробки множество сущностей для разработки действительно больших приложений, но тем не менее на нем можно разрабатывать действительно маленькие приложения.
+Alosaur gives you out of the box many entities for developing really big applications, but you can still develop really small applications on it.
 
-Если вы взглянете на общую структуру создания приложения на Alosaur и какие ограничения он вводит, то возможно вы уже такое встречали. Действительно многие идеи были взяты из .NET Core и Ktor, а DI целиком взята из microsoft/tsyringe https://github.com/microsoft/tsyringe
+If you take a look at the overall structure of creating an application on Alosaur and the constraints it imposes, you may have seen this before. Indeed many of the ideas were taken from .NET Core and Ktor, and the DI is taken entirely from microsoft/tsyringe https://github.com/microsoft/tsyringe
 
-## Перед установкой
+## Before installing
 
-У вас должен быть установлен **Deno** версии выше v1 [https://deno.land/](https://deno.land/)
+You must have **Deno** version above v1 [https://deno.land/](https://deno.land/)
 
-## Начало работ
+## Getting start
 
-Alosaur не предполагает никакой установки, вы можете запустить приложения как любой другой скрипт. Единственной зависимостью является сам Deno.
-
-Для того чтобы сгенерировать стартовый проект вы можете воспользоваться Alosaur CLI:
+Alosaur does not assume any installation, you can run applications as any other script.The only dependence is Deno himself.
+In order to generate the starting project, you can use Alosaur CLI:
 
 ```shell
 deno run --allow-read --allow-write --allow-net https://deno.land/x/alosaur/cli.ts new default myProject
 ```
 
-Затем вы можете запустить сам проект зайдя непосредственно в папку проекта:
+Then you can run the project itself by going directly to the project folder:
 
 ```shell
 deno run --allow-net --allow-read --importmap=imports.json --config ./tsconfig.json app.ts
 ```
 
-Подробнее про Deno CLI вы можете узнать на странице https://github.com/alosaur/cli
+Read more about Deno CLI on the page https://github.com/alosaur/cli

@@ -4,9 +4,9 @@ sidebar_position: 5
 
 # Middleware
 
-Middleware is a function that is called before and after controller's action is executed. Note, unlike Hook, Middleware has limited DI support because it is registered at the top level in place of the application itself.
+Middleware - это функция которая вызывается до и после выполнения action у controller. Внимание, в отличии от Hook, Middleware ограниченно поддерживает DI, так как регистрируется на верхнем уровне в месте с самим приложением.
 
-In Alosaur, Middlware has the following interface:
+В Alosaur Middlware имеет следующий интерфейс:
 
 ```ts
 export type IMiddleware<TState = unknown> =
@@ -28,9 +28,9 @@ export interface MiddlewareTarget<TState = unknown> {
 }
 ```
 
-In order to register your Middlware you can use the `@Middleware` decorator to pass in the Regexp router on which you would like your Middleware to run.
+Для того чтобы зарегистрировать свой Middlware вы можете с помощью декоратора `@Middleware` передав внутрь Regexp роута, на котором вы бы хотели чтобы ваш Middleware сработал.
 
-An example of a simple Middlware:
+Пример простого Middlware:
 
 ```ts
 @Middleware(new RegExp("/"))
@@ -53,7 +53,7 @@ export class Log implements MiddlewareTarget<TState> {
 }
 ```
 
-Then you can register it at the AppSettings level or after initialization:
+Далее вы можете регистрировать его на уровне AppSettings или же после инициализации:
 
 ```ts
 const settings: AppSettings = {
@@ -68,5 +68,5 @@ app.use(/\//, new Log());
 ```
 
 :::tip
-You can also check out more advanced Middleware under WebSocket or SSE.
+Так же вы можете посмотреть более сложные в исполнении Middleware в разделах WebSocket или SSE.
 :::

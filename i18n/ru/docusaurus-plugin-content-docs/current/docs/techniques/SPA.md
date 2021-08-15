@@ -6,7 +6,7 @@ sidebar_position: 3
 
 Single Page Application
 
-In Alosaur you can use a special Middleware, the SpaBuiler, to allow you to give page data as for single-page software.
+В Alosaur вы можете воспользоваться специальным Middleware - SpaBuiler, чтобы позволить отдавать данные страниц как для одностраничного программного обеспечения.
 
 ```jsx
 const app = new App({

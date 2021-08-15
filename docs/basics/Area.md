@@ -4,17 +4,17 @@ sidebar_position: 2
 
 # Area
 
-Это области приложения в котором обычно регистрируются контроллеры и определяют поведение маршрутов для контроллеров в них.
+This is the application area that registers controllers and defines route behavior for the controllers in it.
 
-Area не является модулем в классическом понимании, его нельзя внедрять в другие Area.
+An Area is not a module in the classic sense; it cannot be embedded in other Areas.
 
-Декоратор Area принимает в себя следующий объект: 
+The Area decorator takes on the following object: 
 
-`baseRoute?: string` - маршрут который будет определен для этой области
+`baseRoute?: string` - the route to be defined for this area
 
-`providers?: ProviderDeclaration[];` - провайдеры DI  доступные на уровне области.
+`providers?: ProviderDeclaration[];` - DI providers available at scope level.
 
-`controllers` - Контроллеры области
+`controllers` - Area controllers
 
 ```ts
 @Area({

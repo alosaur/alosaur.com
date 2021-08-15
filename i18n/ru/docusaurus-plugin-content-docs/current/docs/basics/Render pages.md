@@ -4,13 +4,13 @@ sidebar_position: 8
 
 # Render pages
 
-Alosaur can support any html renderer. All you need to do is customize and implement the template renderer.
+Alosaur может поддерживать любой html renderer. Все что вам нужно, это настроить и имплементировать template renderer.
 
 :::tip example
-In the example applications you can find: Dejs, Handlebars, Angular, React, Eta [https://github.com/alosaur/alosaur/tree/master/examples/](https://github.com/alosaur/alosaur/tree/master/examples/)
+В примерах приложений вы можете найти: Dejs, Handlebars, Angular, React, Eta [https://github.com/alosaur/alosaur/tree/master/examples/](https://github.com/alosaur/alosaur/tree/master/examples/)
 :::
 
-An example of a Handlebars setup:
+Пример настройки Handlebars:
 
 ```ts
 // Handlebars

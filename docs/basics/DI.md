@@ -4,15 +4,15 @@ sidebar_position: 6
 
 # Dependency injection
 
-Dependency injection (DI) или внедрение зависимостей представляет механизм, который позволяет сделать взаимодействующие в приложении объекты слабосвязанными. Такие объекты связаны между собой через абстракции, например, через интерфейсы, что делает всю систему более гибкой, более адаптируемой и расширяемой.
+Dependency injection (DI) is a mechanism for making objects that interact in an application loosely coupled. Such objects are linked through abstractions, such as interfaces, which makes the whole system more flexible, more adaptable, and more extensible.
 
-Нередко для установки зависимостей в подобных системах используются специальные контейнеры - IoC-контейнеры (Inversion of Control). Такие контейнеры служат своего рода фабриками, которые устанавливают зависимости между абстракциями и конкретными объектами и, как правило, управляют созданием этих объектов.
+Often special containers - IoC-containers (Inversion of Control) - are used to set dependencies in such systems. Such containers serve as a kind of factories that establish dependencies between abstractions and concrete objects, and usually manage the creation of these objects.
 
-Alosaur в данный момент имеет встроенный контейнер созданный с помощью `microsoft/TSyringe` . Провайдеры по умолчанию резолвятся в конструкторах контроллеров и хуков автоматически.
+Alosaur currently has an embedded container created with `microsoft/TSyringe` . The default providers are automatically resolved in the controller and hook constructors.
 
-Подробные возможности реализации можете найти на странице **TSyringe for Alosaur** [https://github.com/alosaur/alosaur/tree/master/src/injection](https://github.com/alosaur/alosaur/tree/master/src/injection)
+For more details on this implementation, see **TSyringe for Alosaur** [https://github.com/alosaur/alosaur/tree/master/src/injection] (https://github.com/alosaur/alosaur/tree/master/src/injection).
 
-Простой пример использования:
+A simple example of use:
 
 ```ts
 **// Service**
@@ -54,10 +54,10 @@ app.listen();
 
 ## **Providers**
 
-Вы можете регистрировать провайдеры на разных уровнях Injectable container: App, Area, Controller и использовать в Hook.
+You can register providers at different levels of Injectable container: App, Area, Controller and use in Hook.
 
 :::important
- Подробнее на странице: [https://github.com/alosaur/alosaur/tree/master/src/injection#providers](https://github.com/alosaur/alosaur/tree/master/src/injection#providers)
+ Read more on the page: [https://github.com/alosaur/alosaur/tree/master/src/injection#providers](https://github.com/alosaur/alosaur/tree/master/src/injection#providers)
 :::
 
 **ProviderDeclaration**

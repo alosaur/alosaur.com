@@ -4,9 +4,9 @@ sidebar_position: 4
 
 # CORS
 
-Cross-Origin Resource Sharing (CORS) — механизм, использующий дополнительные HTTP-заголовки, чтобы дать возможность агенту пользователя получать разрешения на доступ к выбранным ресурсам с сервера на источнике (домене), отличном от того, что сайт использует в данный момент. Говорят, что агент пользователя делает запрос с другого источника (cross-origin HTTP request), если источник текущего документа отличается от запрашиваемого ресурса доменом, протоколом или портом.
+Cross-Origin Resource Sharing (CORS) is a mechanism that uses additional HTTP headers to allow the user agent to obtain permissions to access selected resources from a server on a source (domain) other than the one the site is currently using. The user agent is said to make a cross-origin HTTP request if the source of the current document differs from the requested resource by domain, protocol, or port.
 
-В Alosaur вы можете воспользоваться специальным Middleware - CorsBuilder, чтобы позволить отдавать данные страниц как для одностраничного программного обеспечения.
+In Alosaur, you can use a special Middleware, CorsBuilder, to allow you to give page data as for single-page software.
 
 ```jsx
 import { HomeArea } from "./areas/home/home.area.ts";

@@ -4,7 +4,7 @@ sidebar_position: 8
 
 # OpenAPI
 
-OpenAPI is a formalized specification and a complete framework for describing, creating, using, and visualizing REST Web services. The goal is to allow client systems and documentation to synchronize their updates with changes on the server. This is achieved by integrating methods, parameters, models, and other elements through OpenAPI with the server software and keeping them in sync all the time
+OpenAPI представляет собой формализованную спецификацию и полноценный фреймворк для описания, создания, использования и визуализации веб-сервисов REST. Задачей является позволить клиентским системам и документации синхронизировать свои обновления с изменениями на сервере. Это достигается тем, что методы, параметры, модели и другие элементы посредством OpenAPI интегрируются с программным обеспечением сервера и всё время с ним синхронизируются
 
 :::tip example
 [Simple example](https://github.com/alosaur/alosaur/tree/master/examples/basic)
@@ -12,7 +12,7 @@ OpenAPI is a formalized specification and a complete framework for describing, c
 [Example with parse type reference](https://github.com/alosaur/alosaur/tree/master/openapi/e2e/)
 :::
 
-In order to generate an OpenApi file, you need to prepare the application settings for it, for example:
+Для того чтобы сгенерировать файл OpenApi вам необходимо подготовить настройки приложения для него, к примеру:
 
 ```jsx
 export const settings: AppSettings = {
@@ -22,8 +22,7 @@ export const settings: AppSettings = {
 };
 ```
 
-Then make basic OpenApi settings with AlosaurOpenApiBuilder:
-
+Затем внести основные настройки OpenApi c помощью AlosaurOpenApiBuilder:
 openapi.ts
 
 ```jsx
@@ -39,7 +38,7 @@ AlosaurOpenApiBuilder.create(settings)
   .saveToFile("./examples/basic/api.json");
 ```
 
-Then run the command to generate the api.json file
+Затем выполнить команду для генерации файла api.json
 
 ```jsx
 deno run -A --config ./src/tsconfig.lib.json examples/basic/openapi.ts
