@@ -5,19 +5,19 @@ sidebar_position: 3
 
 # Controllers
 
-Controllers are responsible for processing incoming requests and returning responses to the client.
+Контроллеры отвечают за обработку входящих запросов и возврат ответов клиенту.
 
-The purpose of a controller is to receive specific requests for an application. The routing mechanism controls which controller receives which requests. Often each controller has more than one route, and different routes can perform different actions. We use classes and decorators to create the underlying controller.
+Цель контроллера - получать конкретные запросы для приложения. Механизм маршрутизации контролирует, какой контроллер получает какие запросы. Часто у каждого контроллера есть более одного маршрута, и разные маршруты могут выполнять разные действия. Для создания базового контроллера мы используем классы и декораторы.
 
-You can use the CLI to create a controller:
+Для создания контроллера вы можете воспользоваться CLI:
 ```shell
 deno run --allow-read --allow-write --allow-net https://deno.land/x/alosaur/cli.ts g controller 
 MyController 
 ```
 
-### Routing
+### Маршрутизация
 
-The routing in Alosaur is registered at the moment when the application is created. In order to define routes in an application, they are usually laid inside the Controller, Get and other decorators:
+Маршутизация в Alosaur регистрируется на моменте создания приложения. Для того чтобы определить маршруты в приложении обычно закладываются внутрь декораторов Controller, Get и других:
 
 ```tsx
 import { App, Area, Controller, Get } from "https://deno.land/x/alosaur/mod.ts";
@@ -44,11 +44,11 @@ const app = new App({
 app.listen();
 ```
 
-In this application, call the GET [localhost:8000](http://localhost:3000/) request (8000 is the standard Alosaur port)
+В данном приложении вызов запроса GET [localhost:8000](http://localhost:3000/) (8000 - стандартный порт Alosaur)
 
 ## **Controller Actions**
 
-Application routing is based on these methods by labeled route decorators:
+Маршрутизация приложения строится на основе этих методов помеченными декораторами маршрута:
 
 **Get** 
 
@@ -60,7 +60,7 @@ Application routing is based on these methods by labeled route decorators:
 
 **Delete**
 
-A route can either take a string as input or remain empty, in which case it will give the default value to the controller. 
+Маршрут может принимать на вход string либо оставаться пустым, тогда этот метод будет отдавать значение по умолчанию у контроллера. 
 
 ```tsx
 @Get()
@@ -76,9 +76,9 @@ sayHiTextAction() {
 
 ### Action Parameters
 
-Each route can take different parameters and they can also be marked with decorators.
+Каждый маршрут может принимать различные параметры и их так же можно пометить декораторами.
 
-Example:
+Например:
 
 ```tsx
 @Post("/")
@@ -89,25 +89,27 @@ Create(@Body() product: Product) {
 
 **@Cookie**
 
-Implements a Cookie in the parameter request received from getCookies [https://deno.land/std@0.103.0/http](https://deno.land/std@0.103.0/http) 
+Внедряет Cookie в запрос параметра, полученный из getCookies [https://deno.land/std@0.103.0/http](https://deno.land/std@0.103.0/http) 
 
 **@Ctx**
 
-Introduces context object parameter (HttpContext, AuthContext)
+Внедряет в параметр объекта контекста (HttpContext, AuthContext)
 
-Can contain `request`, `response`, `state` and many other things that are directly related to the current request
+Может содержать в себе request, response, state и многое другое что относится непосредственно к текущему запросу
+
+> подробнее про него можете прочитать на странице Context
 
 **@Req**
 
-Implements a `AlosaurRequest` object in the parameter
+Внедряет в параметр объект Request
 
 **@Res**
 
-Implements a `AlosaurResponse` object in the parameter
+Внедряет в параметр объект Response
 
 **@Param**
 
-Pulls the key parameter from the url and embeds it in the method parameter 
+Вытаскивает из url параметр по ключу и внедряет его в параметр метода 
 
 ```tsx
 // Example request
@@ -122,7 +124,7 @@ GetById(@Param("id") id: number) {
 
 **@QueryParam**
 
-Pulls the key parameter from the url query and embeds it in the method parameter 
+Вытаскивает из url query параметр по ключу и внедряет его в параметр метода 
 
 ```tsx
 Request to "/test?name=john&city=London"
@@ -139,7 +141,7 @@ Request to "/test?name=john&city=London"
 
 **@QueryParams**
 
-Pulls a parameter from the url query and embeds it in the method parameter
+Вытаскивает из url query параметр и внедряет его в параметр метода 
 
 ```tsx
 Request to "/test?name=john&city=London"
@@ -154,7 +156,7 @@ Request to "/test?name=john&city=London"
 
 **@Body**
 
-Pulls its body from the request and implements it in the method parameter
+Вытаскивает из запроса его тело и внедряет в параметр метода
 
 ```tsx
 curl --header "Content-Type: application/json" \
@@ -173,7 +175,7 @@ Create(@Body() product: Product) {
 }
 ```
 
-Body can take in various transformers, you can turn on the default serializer to configure this.
+Body может принимать в себя различные трансформеры, для того чтобы это настроить можно включить дефолтный сериализатор.
 
 ```tsx
 const { plainToClass } = "[https://jspm.dev/class-transformer@0.2.3](https://jspm.dev/class-transformer@0.2.3)";
@@ -187,7 +189,7 @@ app.useTransform({
 });
 ```
 
-This can be well combined with various validators, such as class-validator:
+Это хорошо можно совместить с различными валидаторами, например такими как class-validator:
 
 post.model.ts
 
@@ -266,7 +268,7 @@ app.useTransform({
 app.listen();
 ```
 
-You can also insert the custom parser directly into the Body:
+Вы также можете вставить кастомный парсер напрямую в Body:
 
 ```ts
 function parser(body): ParsedObject {
@@ -283,7 +285,7 @@ post(@Body(parser) data: ParsedObject) {
 
 ### Multipart form-data, upload files
 
-The Body Decorator also allows you to extract files from a request.
+Декоратор Body так же позволяет извлекать из запроса файлы.
 
 ```ts
 import { FormFile } from "https://deno.land/std@0.102.0/mime/multipart.ts";
@@ -313,7 +315,7 @@ async formData(@Body() body: { [key: string]: FormFile | string }) {
 }
 ```
 
-You can also add options for parsing files
+Так же вы можете добавить опции для парсинга файлов
 
 `@Body(NoopTransform, CustomBodyParser)`
 
@@ -328,12 +330,12 @@ const CustomBodyParser: RequestBodyParseOptions = {
 
 ## Action outputs: Content, View, Redirect
 
-There are several different options for returning the query result:
+Есть несколько различных вариантов для того чтобы вернуть результат запроса:
 
-- **Content -** similar to `return {};` returns Status 200 OK by default
-- **View** - used in conjunction with the Template Engine, you can read more about the template in the Render pages section.
-- **Redirect** and **RedirectPermanent** returns status `301`, `302` using return `Redirect('/to/page')`
-- **Response** - Object of type [Response](https://developer.mozilla.org/en-US/docs/Web/API/Response)
+- **Content -** похож на `return {};` по умолчанию вернет Status 200 OK
+- **View** - используется совместно с Template Engine установленным по умолчанию, подробнее про template вы можете прочитать в разделе Render pages.
+- **Redirect** и **RedirectPermanent** возвращает  status `301`, `302` используя return `Redirect('/to/page')`
+- **Response** - Объкет типа [Response](https://developer.mozilla.org/en-US/docs/Web/API/Response)
 
 ```ts
 return {}; // return 200 status

@@ -4,12 +4,12 @@ sidebar_position: 1
 
 # WebSocket
 
-WebSocket is a communication protocol over a TCP connection for real-time messaging between a browser and a web server.
+WebSocket — протокол связи поверх TCP-соединения, предназначенный для обмена сообщениями между браузером и веб-сервером в режиме реального времени.
 
-Websocket in Alosaur is organized like normal Middleware.
+Websocket в Alosaur организуется как обычный Middleware.
 
 :::important
-You can read more about `context.response.setNotRespond()` in [Middleware](/docs/basics/Middleware).
+Более подробно про `context.response.setNotRespond()` вы можете прочитать в разделе [Middleware](/docs/basics/Middleware).
 :::
 
 ```ts

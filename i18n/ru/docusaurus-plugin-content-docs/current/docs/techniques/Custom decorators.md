@@ -4,9 +4,9 @@ sidebar_position: 7
 
 # Custom decorators
 
-You can add any decorator and put it in the DI system.
+Вы можете добавить любой декоратор и поместить его в систему DI.
 
-Example with hooks:
+Пример с hooks:
 
 ```jsx
 import {
@@ -49,7 +49,7 @@ export class AutorizeHook implements HookTarget<unknown, AuthorizeRoleType> {
 }
 ```
 
-Then you can add wherever you like. For example a controller method:
+Затем вы можете добавить где угодно. Например метод контроллера:
 
 ```jsx
 // ..controller

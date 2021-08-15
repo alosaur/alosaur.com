@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # App
 
-Для создания приложения в Alosaur необходимо воспользоваться конструктором класса **App**.
+For create an application in Alosaur, you must use the class **App**.
 
 ```ts
 // HomeArea
@@ -18,7 +18,7 @@ const app = new App({
 app.listen();
 ```
 
-Приложение может быть затипизировано с помощью TState, TState нужен для типизации состояния контекста запроса.
+The application can be plisted with TState, TState need to typing the status of the context of the request.
 
 ```ts
 // App<TState> 
@@ -31,25 +31,24 @@ getBody(@Context() context: HttpContext<TState>): TState {
 ```
 
 :::important
-Подробнее про **Context** вы можете прочитать в разделе - [Context, Request, Response](/docs/basics/context)
+You can read more about **Context** in - [Context, Request, Response](/docs/basics/context)
 :::
 
 ### AppSettings
 
-Конструктор App принимает интерфейс AppSettings
+The App constructor takes the AppSettings interface
 
 **areas**
 
-Области контроллеров, подробнее в разделе - ссылка
-
+Areas of controllers
 
 **middlewares**
 
-Middleware которые регистрируются во всем приложении , подробнее в разделе - ссылка
+Middleware that registers in the entire application
 
 **staticConfig**
 
-Конфиг для того чтобы выдавать по определенному маршруту статические файлы из определенного каталога
+Configure to output static files from a certain directory by a certain route
 
 ```ts
 {
@@ -68,7 +67,7 @@ app.useStatic({
 
 **viewRenderConfig**
 
-Конфигурация для использования дефолтного рендера в выводах метода, через функцию например `return View('index')`
+Configuration to use the default renderer in method outputs, via a function such as `return View('index')`
 
 ```ts
 // Create Handlebars config
@@ -91,19 +90,19 @@ app.useViewRender({
 ```
 
 :::important
-Подробнее про выводы методов контроллера в разделе: [Controllers](/docs/basics/controllers)
+Read more about the outputs of the controller methods in the section: [Controllers](/docs/basics/controllers)
 :::
 **logging**
 
-Вывод в консоль служебной информации по регистрации контроллеров и маршрутов к ним
+Output to the console service information on the registration of controllers and routes to them
 
 **container**
 
-Обеспечивает внедрение дефолтного базового контейнера в DI 
+Provides default base container implementation in the DI 
 
 **providers**
 
-Провайдеры задекларированные на корневом уровне
+Providers declared at the root level
 
 :::important
 Подробнее про **providers** в разделе: [Dependency injection](/docs/basics/di)
@@ -111,9 +110,9 @@ app.useViewRender({
 
 ### App.listen()
 
-C этой функцией вы запускаете сервер на прослушивание http запросов. По умолчанию сервер запускается на :8000 порту.
+With this function you start the server to listen for http requests. By default, the server runs on port :8000.
 
-Вы так же можете запустить сервер выбрав необходимый вам:
+You can also run the server by selecting the one you want:
 ```ts
 app.listen("http://localhost:8080") 
 

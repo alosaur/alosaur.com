@@ -4,13 +4,13 @@ sidebar_position: 10
 
 # Standart Hooks
 
-Alosaur поддерживает несколько стандартных хуков, некоторые из них представлены ниже:
+Alosaur supports several standard hooks, some of which are shown below:
 
 ## Response cache Hook
 
-Этот хук используется для сохранения ответа в первый раз и немедленной отдаче его в следующих запросах.
+This hook is used to save the response for the first time and give it away immediately in subsequent requests.
 
-Для того чтобы использовать этот хук необходимо запровайдить CasheStore:
+In order to use this hook it is necessary to request CasheStore:
 
 ```jsx
 const app = new App({
@@ -34,7 +34,7 @@ const app = new App({
   }
 ```
 
-@ResponseCache принимает интерфейс ResponseCachePayload который включает параметры:
+@ResponseCache takes ResponseCachePayload interface which includes parameters:
 
-- duration: number; - Врямя сохранения результата запроса в ms.
-- getHash?: (context: Context) => string; - Функция для получения хэша запроса из контекста, по умолчанию это serverRequest.url
+- duration: number; - The time to save the query result in ms.
+- getHash?: (context: Context) => string; - Function to get request hash from context, by default it is serverRequest.url

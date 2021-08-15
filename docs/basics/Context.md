@@ -4,15 +4,15 @@ sidebar_position: 4
 
 # Context, Request, Response
 
-Часть данных, используемых в приложении, можно отнести к его состоянию. Это могут быть как какие-то глобальные данные, так и данные, которые непосредственно относятся к запросу и пользователю. И в зависимости от вида данных, существуют различные способы для их хранения.
+Some of the data used in an application can be attributed to its state. This can be either some global data or data that is directly related to the request and the user. And depending on the type of data, there are different ways to store it.
 
-В объекте Context определен state для таких данных, которые непосредственно связаны с текущим запросом. После завершения запроса все данные из state удаляются. State может быть затипизирован как угодно и иметь один тип на все приложение через `App<TState>`.
+In the Context object, a state is defined for such data that is directly related to the current request. When the request is complete, all data from the state is removed. The state can be typed as desired and have one type for the entire application through `App<TState>`.
 
 ## HttpContext
 
-В обычном приложении вы можете работать с обьектом HttpContext, который содержит в себе request, response, state
+In a basic application you can work with HttpContext object, which contains request, response, state
 
-HttpContext может быть доступен в различных местах вашего приложения например:
+HttpContext can be available in different places of your application, e.g:
 
 Controller:
 
@@ -26,7 +26,7 @@ class HomeController {
 }
 ```
 
-Middleware по умолчанию:
+Middleware by default:
 
 ```ts
 export interface MiddlewareTarget<TState = unknown> {
@@ -35,7 +35,7 @@ export interface MiddlewareTarget<TState = unknown> {
 }
 ```
 
- Hooks по умолчанию:
+ Hooks by default:
 
 ```ts
 export interface HookTarget<TState, TPayload> {
@@ -49,7 +49,7 @@ export interface HookTarget<TState, TPayload> {
 
 **AlosaurRequest**
 
-Этот объект включает параметры запроса:
+This object includes request parameters:
 
 ```ts
 public readonly url: string;
@@ -63,12 +63,12 @@ public async body(): unknown // Parse body with RequestBodyParseOptions
 
 **AlosaurResponse**
 
-Этот объект включает параметры ответа сервера и создается на моменте запроса и может формировать различные состояния в себе.
+This object includes server response parameters and is created at the moment of the request and can form different states in itself.
 
 ```ts
 type ResponseBody = Uint8Array | Deno.Reader | string | any;
 
-class Response {
+class AlosaurResponse {
 	public status?: number;
 	public body?: ResponseBody;
 	public result?: ActionResult | any;
@@ -80,11 +80,11 @@ class Response {
 
 **context.response.setNotRespond();**
 
-Используется для того чтобы запрос оставался в рамках сервера, например в middleware WebSocket или SSE
+Used to ensure that the response is immediate after the execution of the current code, without executing other Hook, Middleware.
 
 ## Extends HttpContext, custom Context
 
-Если вы хотите расширить использование глобального контекста, вы можете использовать такую технику:
+If you want to extend the use of global context, you can use this technique:
 
 ```ts
 @Injectable()
@@ -97,7 +97,7 @@ export class MySecurityContext<T = any> extends HttpContext<T> {
 }
 ```
 
-Затем с помощью техники DI вы можете переопределить создание HttpContext:
+You can then use the DI technique to override the creation of the HttpContext:
 
 ```ts
 const app = new App({

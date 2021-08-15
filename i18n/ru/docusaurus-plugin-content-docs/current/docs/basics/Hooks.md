@@ -4,9 +4,11 @@ sidebar_position: 7
 
 # Hooks
 
-Hooks - as well as Middleware is a function which is called before and after action is performed by controller. Hook is specified without a root and can be registered in Area, Controller, Action having access to their providers.
+<!-- [Standart Hooks](Hooks/Standart%20Hooks.md) -->
 
-Hooks interface looks like this:
+Hooks - так же как и Middleware это функция которая вызывается до и после выполнения action у controller. Hook указывается без роута и может быть зарегистрирована в Area, Controller, Action имея доступ к их провайдерам.
+
+Интерфейс хуков имеет следующий вид:
 
 ```ts
 export class MyHook implements HookTarget<State, PayloadType> {
@@ -36,7 +38,7 @@ export class MyHook implements HookTarget<State, PayloadType> {
 }
 ```
 
-Hooks can be registered at different levels: 
+Регистрировать хуки можно на разных уровнях: 
 
 ```ts
 // for all actions in controller
@@ -58,5 +60,5 @@ export class MyArea {
 ```
 
 :::tip example
-You can see examples of hooks on this page [https://github.com/alosaur/alosaur/tree/master/examples/hooks](https://github.com/alosaur/alosaur/tree/master/examples/hooks)
+Примеры хуков вы сможете увидеть на этой странице [https://github.com/alosaur/alosaur/tree/master/examples/hooks](https://github.com/alosaur/alosaur/tree/master/examples/hooks)
 :::

@@ -4,13 +4,13 @@ sidebar_position: 9
 
 # Security
 
-In Alosaur, this module includes several sub-modules. You also need to substitute HttpContext with SecurityContext in order to substitute it. You can see it below in the examples.
+В Alosaur этот модуль включает несколько подмодулей. Так же для его подмены вам необходимо подменить HttpContext на SecurityContext. Ниже в примерах вы это можете увидеть.
 
 ## Session
 
-Sessions in Alosaur are cookie-based. By enabling this functionality, you can take advantage of other features such as Authorization. 
+Сессии в Alosaur работают на основе Cookies. Включая этот функционал вы можете воспользоваться и другими функциями, например Authorization. 
 
-Sessions add a user to the cookie with a so called sessionId which also includes a signature part, so a unique secret key must be specified. 
+Сессии добавляют в куку пользователя c так называемым sessionId который так же включает в себя часть подписи, поэтому необходимо задать уникальный секретный ключ. 
 
 ```ts
 ...
@@ -48,13 +48,13 @@ public action(@Ctx() context: SecurityContext) {
 }
 ```
 
-SessionMiddleware takes 2 values: SessionStore and SessionOptions. Session store is needed to store the sessionId information and the information written in session.
+SessionMiddleware принимает 2 значения: SessionStore и SessionOptions. Session store необходим для хранения информации про sessionId и записанной в session информации.
 
 :::note
-Alosaur provides by default a **MemoryStore** that stores information in runtime application memory. You can also implement your Store using the **SessionStore** interface: **SessionStore**. Learn more: [https://github.com/alosaur/alosaur/tree/master/src/security/session](https://github.com/alosaur/alosaur/tree/master/src/security/session)
+Alosaur по умолчанию предоставляет **MemoryStore**, который хранит информацию в памяти приложения во время выполнения. Так же вы можете реализовать свой Store использую интерфейс: **SessionStore**. Подробнее: [https://github.com/alosaur/alosaur/tree/master/src/security/session](https://github.com/alosaur/alosaur/tree/master/src/security/session)
 :::
 
-The SessionOptions interface looks like this:
+Интерфейс SessionOptions выглядит следующим образом:
 
 ```ts
 export interface SessionOptions {
@@ -82,11 +82,11 @@ export interface SessionOptions {
 
 ## Authorization & Authentication
 
-Example authorization application: [https://github.com/alosaur/alosaur/tree/master/examples/auth](https://github.com/alosaur/alosaur/tree/master/examples/auth)
+Пример приложения авторизации: [https://github.com/alosaur/alosaur/tree/master/examples/auth](https://github.com/alosaur/alosaur/tree/master/examples/auth)
 
 ### AuthMiddleware
 
-For authorization to work, you must enable AuthMiddleware support by passing the appropriate AuthenticationScheme to it.
+Для работы авторизации необходимо включить поддержку AuthMiddleware передав в него соответствующий AuthenticationScheme.
 
 ```ts
 const app = new App({
@@ -118,11 +118,11 @@ app.use(new RegExp("/"), authMiddleware);
 
 ### AuthenticationScheme
 
-Required to use SecurityContext, Authenticate, verify, signin, signout.
+Необходим для использования SecurityContext, Authentificate, verify, signin, signout.
 
-There are 2 types of schemes in Alosaur: `CookiesAuthentication.DefaultScheme` and `JwtBearerScheme`.
+В Alosaur имеются 2 типа схем: `CookiesAuthentication.DefaultScheme` и `JwtBearerScheme`.
 
-Having a common interface AuthenticationScheme:
+Имеющий общий интерфейс AuthenticationScheme:
 
 ```ts
 export interface AuthenticationScheme {
@@ -158,7 +158,7 @@ export interface AuthenticationScheme {
 
 **CookiesScheme**
 
-Includes support for Cookies for authorization. You can use the default scheme and override its behavior
+Включает в себя поддержку Cookies для авторизации. Вы можете использовать схему по умолчанию и переопределить его поведение
 
 ```ts
 export namespace CookiesAuthentication {
@@ -170,9 +170,9 @@ export namespace CookiesAuthentication {
 
 **JwtBearerScheme**
 
-Includes JSON Web Tokens support for authorization. Read more about it: [https://en.wikipedia.org/wiki/JSON_Web_Token](https://en.wikipedia.org/wiki/JSON_Web_Token)
+Включает в себя поддержку JSON Web Tokens для авторизации. Подробнее про него: [https://en.wikipedia.org/wiki/JSON_Web_Token](https://en.wikipedia.org/wiki/JSON_Web_Token)
 
-For login and authentication you need to create instance of this scheme:
+Для входа и аутентификации вам необходимо создать instance этой схемы:
 
 ```ts
 export const JWTscheme = new JwtBearerScheme(
@@ -201,7 +201,7 @@ app.use(new RegExp("/"), authMiddleware);
 
 ## SecurityContext
 
-SecurityContext can be used everywhere just like regular HttpContext. To use it, you must redefine it at the application level:
+SecurityContext может быть использован везде как и обычный HttpContext. Для его использования необходимо переопределить его на уровне приложения:
 
 ```ts
 const app = new App({
@@ -212,7 +212,7 @@ const app = new App({
 });
 ```
 
-An example of working with SecurityContext and a possible implementation of authorization:
+Пример работы с SecurityContext и возможный вариант реализации авторизации:
 
 ```ts
 @Controller("/account")
@@ -271,15 +271,15 @@ export class AuthService {
 
 **auth.signInAsync** 
 
-Accepts AuthenticationScheme and Identity object
+Принимает AuthenticationScheme и объект Identity
 
 **auth.signOutAsync**
 
-Accepts AuthenticationScheme
+Принимает AuthenticationScheme
 
 **Identity**
 
-The object that will be available later in the SecurityContext, roles can be used in the `Authorize` decorator
+Объект который будет доступен далее в SecurityContext, roles может быть использован в `Authorize` декораторе;
 
 ```ts
   export interface Identity<T> {
@@ -298,9 +298,9 @@ await context.security.auth.signInAsync(
 
 ## Authorize Decorators
 
-You can use the `@Authorize` decorator out of the box for ease of use.
+Для удобства использования вы можете использовать декоратор `@Authorize` из коробки.
 
-`@Authorize(scheme, payload)` is a special decorator hook that can be used at different levels: actions, controllers, areas.
+`@Authorize(scheme, payload)` - это специальный хук декоратор который может быть использован на разном уровне: actions, controllers, areas.
 
 ```ts
 @Authorize(CookiesAuthentication.DefaultScheme)
