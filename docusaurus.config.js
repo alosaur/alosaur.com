@@ -4,7 +4,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Alosaur',
-  tagline: 'Deno web framework with many decorators',
+  tagline: 'Deno Web Framework with many decorators',
   url: 'https://alosaur.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',

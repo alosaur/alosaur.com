@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Deno web framework with decorators">
+      description="Deno Web Framework with decorators">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
