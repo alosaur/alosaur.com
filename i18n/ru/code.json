@@ -163,10 +163,10 @@
     "message": "- модули вашего приложения"
   },
   "homepage.futures.Controller": {
-    "message": "- интерпретирует действия, для запроса"
+    "message": "- интерпретирует действия для запроса"
   },
   "homepage.futures.Hooks": {
-    "message": "- промежуточные методы запросов для для Area, Сontroller и Action с поддержкой DI. Имеет 3 метода:"
+    "message": "- промежуточные методы запросов для Area, Сontroller и Action с поддержкой DI. Имеет 3 метода:"
   },
   "homepage.futures.Decorators": {
     "message": "- для query, cookie, parametrs, routes и других."
