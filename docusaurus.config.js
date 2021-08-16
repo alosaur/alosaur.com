@@ -60,11 +60,28 @@ module.exports = {
           ],
         },
         {
+          title: 'Links',
+          items: [
+            {
+              label: 'Third Party Modules',
+              to: 'https://deno.land/x',
+            },
+            {
+              label: 'Open Collective',
+              to: 'https://opencollective.com/alosaur',
+            },
+          ],
+        },
+        {
           title: 'More',
           items: [
             {
               label: 'GitHub',
               href: 'https://github.com/alosaur/alosaur',
+            },
+            {
+              label: 'x/alosaur',
+              href: 'https://deno.land/x/alosaur',
             },
           ],
         },
