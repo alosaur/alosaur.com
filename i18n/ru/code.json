@@ -158,5 +158,26 @@
   "theme.TOCCollapsible.toggleButtonLabel": {
     "message": "Содержание этой страницы",
     "description": "The label used by the button on the collapsible TOC component"
+  },
+  "homepage.futures.Area": {
+    "message": "- модули вашего приложения"
+  },
+  "homepage.futures.Controller": {
+    "message": "- интерпретирует действия, для запроса"
+  },
+  "homepage.futures.Hooks": {
+    "message": "- промежуточные методы запросов для для Area, Сontroller и Action с поддержкой DI. Имеет 3 метода:"
+  },
+  "homepage.futures.Decorators": {
+    "message": "- для query, cookie, parametrs, routes и других."
+  },
+  "homepage.futures.DI": {
+    "message": "- для всех Сontroller и Hook, по умолчанию из microsoft/TSyringe."
+  },
+  "homepage.futures.Other": {
+    "message": "Поддержка любого шаблонного движка страниц"
+  },
+  "homepage.titleFeatures": {
+    "message": "Особенности"
   }
 }

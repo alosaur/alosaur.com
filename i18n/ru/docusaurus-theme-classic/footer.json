@@ -18,5 +18,9 @@
   "link.item.label.GitHub": {
     "message": "GitHub",
     "description": "The label of footer link with label=GitHub linking to https://github.com/alosaur/alosaur"
+  },
+  "copyright": {
+    "message": "Copyright © 2021 Alosaur",
+    "description": "The footer copyright"
   }
 }
