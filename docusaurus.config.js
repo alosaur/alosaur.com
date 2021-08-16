@@ -6,7 +6,7 @@ module.exports = {
   title: 'Alosaur',
   tagline: 'Deno web framework with many decorators',
   url: 'https://alosaur.github.io',
-  baseUrl: '/docs',
+  baseUrl: '/docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
