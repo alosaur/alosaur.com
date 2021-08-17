@@ -101,7 +101,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/alosaur/docs/edit/master/',
+            'https://github.com/alosaur/alosaur.github.io/edit/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
