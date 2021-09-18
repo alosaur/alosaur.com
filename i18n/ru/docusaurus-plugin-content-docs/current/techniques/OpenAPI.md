@@ -61,18 +61,14 @@ const builder = AlosaurOpenApiBuilder.create(settings)
 
 How to teaching how to correctly assemble controllers?
 
-You must put in the JsDoc decorator as **@decorator**
-
-> ECMAScript decorators are sometimes an important part of an API contract. However, today the TypeScript compiler does not represent decorators in the .d.ts output files used by API consumers. The @decorator tag provides a workaround, enabling a decorator expression to be quoted in a doc comment. [https://tsdoc.org/pages/tags/decorator/](https://tsdoc.org/pages/tags/decorator/)
-
 Example:
 
 ```jsx
-@Controller()
 /**
  * Product controller
  * @decorator Controller
  */
+@Controller()
 export class ProductController {
   /**
    * Gets product by id
@@ -94,7 +90,6 @@ You can also add what media types can be expected in the body. Use RequestBody p
 /**
    * Create product
    * @param product
-   * @decorator Post
    * @RequestBody application/xml
    * @RequestBody application/json
    */
@@ -111,7 +106,6 @@ You can also add what types can be returned from a controller method. Use decora
  * @summary action test
  * @remarks Awesomeness!
  * @param {id} The product id
- * @decorator Get
  */
 @Get("/:id")
 @ProducesResponse({ code: 200, type: Product, description: "Product found" })
