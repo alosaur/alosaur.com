@@ -35,7 +35,7 @@ export default function HomepageFeatures() {
              </li> 
             <li>
             <Translate id="homepage.futures.Other">
-              Render pages any template render engine.
+              Render pages with any template render engine.
               </Translate>
             </li> 
           </ul>
