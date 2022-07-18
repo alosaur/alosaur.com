@@ -2,7 +2,7 @@
 sidebar_position: 10
 ---
 
-# Standart Hooks
+# Standard Hooks
 
 Alosaur supports several standard hooks, some of which are shown below:
 
