@@ -22,7 +22,7 @@ const app = new App({
 });
 ```
 
-И далее использовать декоратор `@ResponseCache` в controller action:
+And then use the `@ResponseCache` decorator on the controller action:
 
 ```jsx
 @Get()
