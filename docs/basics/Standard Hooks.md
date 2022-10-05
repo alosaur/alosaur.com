@@ -2,7 +2,7 @@
 sidebar_position: 10
 ---
 
-# Standart Hooks
+# Standard Hooks
 
 Alosaur supports several standard hooks, some of which are shown below:
 
@@ -22,7 +22,7 @@ const app = new App({
 });
 ```
 
-И далее использовать декоратор `@ResponseCache` в controller action:
+And then use the `@ResponseCache` decorator on the controller action:
 
 ```jsx
 @Get()
