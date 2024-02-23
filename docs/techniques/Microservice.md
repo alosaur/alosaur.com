@@ -41,12 +41,14 @@ import { MEvent, MPattern } from "alosaur/microservice/mod.ts";
 @Controller()
 export class HomeController {
   @MPattern({ cmd: "sum" })
-  async sum(@Body() body: number[]) {
+  @ActionParam(0, Body())
+  async sum(body: number[]) {
     return Array.isArray(body) ? body.reduce((acc, cur) => acc + cur, 0) : 0;
   }
 
   @MEvent("calculated")
-  async event(@Body() body: string) {
+  @ActionParam(0, Body())
+  async event(body: string) {
     return body;
   }
 }

@@ -8,7 +8,7 @@ Alosaur is a framework for building scalable applications on Deno. [Deno](https:
 
 Alosaur gives you out of the box many entities for developing really big applications, but you can still develop really small applications on it.
 
-If you take a look at the overall structure of creating an application on Alosaur and the constraints it imposes, you may have seen this before. Indeed many of the ideas were taken from .NET Core and Ktor, and the Dependency Injection is taken entirely from [tsyringe](https://github.com/microsoft/tsyringe).
+If you take a look at the overall structure of creating an application on Alosaur and the constraints it imposes, you may have seen this before. Indeed many of the ideas were taken from .NET Core and Ktor.
 
 ## Before installing
 
@@ -40,7 +40,7 @@ import {
   Area,
   Controller,
   Get,
-} from "https://deno.land/x/alosaur@v0.33.0/mod.ts";
+} from "https://deno.land/x/alosaur@v1.1.0/mod.ts";
 
 @Controller() // or specific path @Controller("/home")
 export class HomeController {

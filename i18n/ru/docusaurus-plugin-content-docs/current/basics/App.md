@@ -25,7 +25,8 @@ app.listen();
 // example uses in Controller action
 
 @Get()
-getBody(@Context() context: HttpContext<TState>): TState {
+@ActionParam(0, Context())
+getBody(context: HttpContext<TState>): TState {
   return context.state;
 }
 ```

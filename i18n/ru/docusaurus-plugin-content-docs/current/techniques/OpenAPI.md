@@ -94,7 +94,8 @@ You can also add what media types can be expected in the body. Use RequestBody p
    * @RequestBody application/json
    */
   @Post("/")
-  Create(@Body() product: Product) {
+  @ActionParam(0, Body())
+  Create(product: Product) {
   }
 ```
 
@@ -111,7 +112,8 @@ You can also add what types can be returned from a controller method. Use decora
 @ProducesResponse({ code: 200, type: Product, description: "Product found" })
 @ProducesResponse({ code: 404, type: NotFoundResult, description: "Product has missing/invalid values" })
 @ProducesResponse({ code: 500, description: "Oops! Can't create your product right now" })
-GetById(@Param("id") id: string) {
+@ActionParam(0, Param("id"))
+GetById(id: string) {
   return new Product();
 }
 ```

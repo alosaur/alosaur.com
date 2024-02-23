@@ -23,18 +23,24 @@ type AuthorizeRoleType = string | undefined;
 /**
  * Authorize decorator with role
  */
-export function CustomAuthorize(role?: AuthorizeRoleType): Function {
-  return function (object: any, methodName?: string) {
-    // add hook to global metadata
-    getMetadataArgsStorage().hooks.push({
-      type: methodName ? BusinessType.Action : BusinessType.Controller,
-      object,
-      target: object.constructor,
-      method: methodName,
-      instance: container.resolve(AutorizeHook),
-      payload: role,
-    });
-  };
+export function CustomAuthorize(
+    scheme: AuthenticationScheme,
+    payload?: AuthPayload,
+): Function {
+    return function (object: any, context: { kind: "method" | "class"; name: string }) {
+        const controllerId = getOrSetControllerId(context as ClassMethodDecoratorContext);
+
+        // add hook to global metadata
+        getMetadataArgsStorage().hooks.push({
+            type: context.kind === "method" ? BusinessType.Action : BusinessType.Controller,
+            object,
+            target: object.constructor,
+            method: context.name,
+            instance: SLContainer.create(AutorizeHook),
+            payload: { scheme, payload },
+            controllerId,
+        });
+    };
 }
 
 export class AutorizeHook implements HookTarget<unknown, AuthorizeRoleType> {

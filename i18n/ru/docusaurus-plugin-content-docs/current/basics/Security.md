@@ -35,7 +35,8 @@ app.use(/\//,  new SessionMiddleware(store, {secret: "6b911fd37cdf5c81d4c0adb1ab
 // then you can use Context in action:
 // action
 @Get('counter')
-public action(@Ctx() context: SecurityContext) {
+@ActionParam(0, Ctx())
+public action(context: SecurityContext) {
     context.security.session.set("testValue", 1);
     context.security.session.get("testValue", 1);
     
@@ -228,7 +229,8 @@ export class AccountController {
   constructor(private service: AuthService) {}
 
   @Get("/login")
-  getLogin(@Ctx() context: SecurityContext) {
+  @ActionParam(0, Ctx())
+  getLogin(context: SecurityContext) {
     if (context.security.auth.identity()) {
       return Redirect("/home/protected");
     }
@@ -243,9 +245,11 @@ export class AccountController {
   }
 
   @Post("/login")
+  @ActionParam(0, Ctx())
+  @ActionParam(1, Body())
   async postLogin(
-    @Ctx() context: SecurityContext,
-    @Body() account: LoginModel,
+    context: SecurityContext,
+    account: LoginModel,
   ) {
     const user = this.service.validate(account.login, account.password);
 
@@ -258,7 +262,8 @@ export class AccountController {
   }
 
   @Get("/logout")
-  async logOut(@Ctx() context: SecurityContext) {
+  @ActionParam(0, Ctx())
+  async logOut(context: SecurityContext) {
     await context.security.auth.signOutAsync(scheme);
     return Redirect("/account/login");
   }

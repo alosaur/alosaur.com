@@ -82,7 +82,8 @@ sayHiTextAction() {
 
 ```tsx
 @Post("/")
-Create(@Body() product: Product) {
+@ActionParam(0, Body())
+Create(product: Product) {
   // @Body - action parameter 
 }
 ```
@@ -170,7 +171,8 @@ interface Product {
 }
 
 @Post("/")
-Create(@Body() product: Product) {
+@ActionParam(0, Body())
+Create(product: Product) {
   
 }
 ```
@@ -237,7 +239,8 @@ const { plainToClass } = transformer;
 @Controller()
 export class HomeController {
   @Post("/")
-  async post(@Body(PostModel) data: PostModel) {
+  @ActionParam(0, Body(PostModel))
+  async post(data: PostModel) {
     return {
       data,
       errors: await validate(data),
@@ -278,7 +281,8 @@ function parser(body): ParsedObject {
 
 ...
 @Post('/')
-post(@Body(parser) data: ParsedObject) {
+@ActionParam(0, Body(parser))
+post(data: ParsedObject) {
 
 }
 ```
@@ -294,7 +298,8 @@ import { move } from "https://deno.land/std@0.102.0/fs/move.ts";
 ...
 
 @Post()
-async formData(@Body() body: { [key: string]: FormFile | string }) {
+@ActionParam(0, Body())
+async formData(body: { [key: string]: FormFile | string }) {
   const file: FormFile = body.file as FormFile;
 
   if (file) {
@@ -317,7 +322,7 @@ async formData(@Body() body: { [key: string]: FormFile | string }) {
 
 Так же вы можете добавить опции для парсинга файлов
 
-`@Body(NoopTransform, CustomBodyParser)`
+`Body(NoopTransform, CustomBodyParser)`
 
 ```ts
 const CustomBodyParser: RequestBodyParseOptions = {

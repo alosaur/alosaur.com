@@ -25,7 +25,8 @@ The application can be plisted with TState, TState need to typing the status of 
 // example uses in Controller action
 
 @Get()
-getBody(@Context() context: HttpContext<TState>): TState {
+@ActionParam(0, Context())
+getBody(context: HttpContext<TState>): TState {
   return context.state;
 }
 ```

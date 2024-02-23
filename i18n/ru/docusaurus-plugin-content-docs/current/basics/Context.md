@@ -20,7 +20,8 @@ Controller:
 @Controller()
 class HomeController {
   @Get()
-  getText(@Ctx() context: HttpContext) {
+  @ActionParam(0, Ctx())
+  getText(context: HttpContext) {
 	   // something
   }
 }
@@ -55,7 +56,7 @@ export interface HookTarget<TState, TPayload> {
 public readonly url: string;
 public readonly headers: Headers;
 public readonly method: string;
-public readonly serverRequest: ServerRequest // Request object from std/http
+public readonly serverRequest: ServerRequest // Request object from Deno serve
 public async body(): unknown // Parse body with RequestBodyParseOptions
 ```
 
