@@ -1,0 +1,26 @@
+{
+  "unversionedId": "basics/Hooks",
+  "id": "basics/Hooks",
+  "isDocsHomePage": false,
+  "title": "Hooks",
+  "description": "Hooks - так же как и Middleware это функция которая вызывается до и после выполнения action у controller. Hook указывается без роута и может быть зарегистрирована в Area, Controller, Action имея доступ к их провайдерам.",
+  "source": "@site/i18n/ru/docusaurus-plugin-content-docs/current/basics/Hooks.md",
+  "sourceDirName": "basics",
+  "slug": "/basics/Hooks",
+  "permalink": "/ru/docs/basics/Hooks",
+  "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/basics/Hooks.md",
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Dependency injection",
+    "permalink": "/ru/docs/basics/DI"
+  },
+  "next": {
+    "title": "Render pages",
+    "permalink": "/ru/docs/basics/Render pages"
+  }
+}

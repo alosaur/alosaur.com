@@ -1,0 +1,26 @@
+{
+  "unversionedId": "basics/Render pages",
+  "id": "basics/Render pages",
+  "isDocsHomePage": false,
+  "title": "Render pages",
+  "description": "Alosaur может поддерживать любой html renderer. Все что вам нужно, это настроить и имплементировать template renderer.",
+  "source": "@site/i18n/ru/docusaurus-plugin-content-docs/current/basics/Render pages.md",
+  "sourceDirName": "basics",
+  "slug": "/basics/Render pages",
+  "permalink": "/ru/docs/basics/Render pages",
+  "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/basics/Render pages.md",
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "sidebar_position": 8
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Hooks",
+    "permalink": "/ru/docs/basics/Hooks"
+  },
+  "next": {
+    "title": "Security",
+    "permalink": "/ru/docs/basics/Security"
+  }
+}

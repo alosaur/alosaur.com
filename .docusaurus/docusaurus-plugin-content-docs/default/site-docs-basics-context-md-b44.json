@@ -1,0 +1,26 @@
+{
+  "unversionedId": "basics/Context",
+  "id": "basics/Context",
+  "isDocsHomePage": false,
+  "title": "Context, Request, Response",
+  "description": "Some of the data used in an application can be attributed to its state. This can be either some global data or data that is directly related to the request and the user. And depending on the type of data, there are different ways to store it.",
+  "source": "@site/docs/basics/Context.md",
+  "sourceDirName": "basics",
+  "slug": "/basics/Context",
+  "permalink": "/docs/basics/Context",
+  "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/basics/Context.md",
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Controllers",
+    "permalink": "/docs/basics/Controllers"
+  },
+  "next": {
+    "title": "Middleware",
+    "permalink": "/docs/basics/Middleware"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "basics/Hooks",
+  "id": "basics/Hooks",
+  "isDocsHomePage": false,
+  "title": "Hooks",
+  "description": "Hooks - as well as Middleware is a function which is called before and after action is performed by controller. Hook is specified without a root and can be registered in Area, Controller, Action having access to their providers.",
+  "source": "@site/docs/basics/Hooks.md",
+  "sourceDirName": "basics",
+  "slug": "/basics/Hooks",
+  "permalink": "/docs/basics/Hooks",
+  "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/basics/Hooks.md",
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Dependency injection",
+    "permalink": "/docs/basics/DI"
+  },
+  "next": {
+    "title": "Render pages",
+    "permalink": "/docs/basics/Render pages"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "basics/Context",
+  "id": "basics/Context",
+  "isDocsHomePage": false,
+  "title": "Context, Request, Response",
+  "description": "Часть данных, используемых в приложении, можно отнести к его состоянию. Это могут быть как какие-то глобальные данные, так и данные, которые непосредственно относятся к запросу и пользователю. И в зависимости от вида данных, существуют различные способы для их хранения.",
+  "source": "@site/i18n/ru/docusaurus-plugin-content-docs/current/basics/Context.md",
+  "sourceDirName": "basics",
+  "slug": "/basics/Context",
+  "permalink": "/ru/docs/basics/Context",
+  "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/basics/Context.md",
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Controllers",
+    "permalink": "/ru/docs/basics/Controllers"
+  },
+  "next": {
+    "title": "Middleware",
+    "permalink": "/ru/docs/basics/Middleware"
+  }
+}

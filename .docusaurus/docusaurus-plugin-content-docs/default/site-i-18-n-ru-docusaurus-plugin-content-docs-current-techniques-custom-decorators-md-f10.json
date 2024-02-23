@@ -1,0 +1,26 @@
+{
+  "unversionedId": "techniques/Custom decorators",
+  "id": "techniques/Custom decorators",
+  "isDocsHomePage": false,
+  "title": "Custom decorators",
+  "description": "Вы можете добавить любой декоратор и поместить его в систему DI.",
+  "source": "@site/i18n/ru/docusaurus-plugin-content-docs/current/techniques/Custom decorators.md",
+  "sourceDirName": "techniques",
+  "slug": "/techniques/Custom decorators",
+  "permalink": "/ru/docs/techniques/Custom decorators",
+  "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/techniques/Custom decorators.md",
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Database",
+    "permalink": "/ru/docs/techniques/Database"
+  },
+  "next": {
+    "title": "OpenAPI",
+    "permalink": "/ru/docs/techniques/OpenAPI"
+  }
+}

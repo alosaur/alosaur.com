@@ -1,0 +1,694 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "versionLabel": "Next",
+          "versionPath": "/docs",
+          "versionEditUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs",
+          "versionEditUrlLocalized": "https://github.com/alosaur/alosaur.github.io/edit/main/i18n/en/docusaurus-plugin-content-docs/current",
+          "versionBanner": "none",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "/Users/irustm/dev/github/alosaur_org/alosaur.com/sidebars.js",
+          "contentPath": "/Users/irustm/dev/github/alosaur_org/alosaur.com/docs",
+          "contentPathLocalized": "/Users/irustm/dev/github/alosaur_org/alosaur.com/i18n/en/docusaurus-plugin-content-docs/current",
+          "mainDocId": "intro",
+          "sidebars": {
+            "tutorialSidebar": [
+              {
+                "type": "doc",
+                "id": "intro"
+              },
+              {
+                "type": "category",
+                "label": "Basics",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "basics/App"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "basics/Area"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "basics/Controllers"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "basics/Context"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "basics/Middleware"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "basics/DI"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "basics/Hooks"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "basics/Render pages"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "basics/Security"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "basics/Standard Hooks"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "Techniques",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "techniques/WebSocket"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "techniques/SSE"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "techniques/SPA"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "techniques/CORS"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "techniques/Microservice"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "techniques/Database"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "techniques/Custom decorators"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "techniques/OpenAPI"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "doc",
+                "id": "alosaur-lite"
+              },
+              {
+                "type": "doc",
+                "id": "sponsors"
+              }
+            ]
+          },
+          "docs": [
+            {
+              "unversionedId": "alosaur-lite",
+              "id": "alosaur-lite",
+              "isDocsHomePage": false,
+              "title": "Alosaur Lite",
+              "description": "Intro",
+              "source": "@site/docs/alosaur-lite.md",
+              "sourceDirName": ".",
+              "slug": "/alosaur-lite",
+              "permalink": "/docs/alosaur-lite",
+              "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/alosaur-lite.md",
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "sidebar_position": 4
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "OpenAPI",
+                "permalink": "/docs/techniques/OpenAPI"
+              },
+              "next": {
+                "title": "Sponsors ❤️",
+                "permalink": "/docs/sponsors"
+              }
+            },
+            {
+              "unversionedId": "basics/App",
+              "id": "basics/App",
+              "isDocsHomePage": false,
+              "title": "App",
+              "description": "For create an application in Alosaur, you must use the class App.",
+              "source": "@site/docs/basics/App.md",
+              "sourceDirName": "basics",
+              "slug": "/basics/App",
+              "permalink": "/docs/basics/App",
+              "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/basics/App.md",
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Intro",
+                "permalink": "/docs/intro"
+              },
+              "next": {
+                "title": "Area",
+                "permalink": "/docs/basics/Area"
+              }
+            },
+            {
+              "unversionedId": "basics/Area",
+              "id": "basics/Area",
+              "isDocsHomePage": false,
+              "title": "Area",
+              "description": "This is the application area that registers controllers and defines route behavior for the controllers in it.",
+              "source": "@site/docs/basics/Area.md",
+              "sourceDirName": "basics",
+              "slug": "/basics/Area",
+              "permalink": "/docs/basics/Area",
+              "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/basics/Area.md",
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "App",
+                "permalink": "/docs/basics/App"
+              },
+              "next": {
+                "title": "Controllers",
+                "permalink": "/docs/basics/Controllers"
+              }
+            },
+            {
+              "unversionedId": "basics/Context",
+              "id": "basics/Context",
+              "isDocsHomePage": false,
+              "title": "Context, Request, Response",
+              "description": "Some of the data used in an application can be attributed to its state. This can be either some global data or data that is directly related to the request and the user. And depending on the type of data, there are different ways to store it.",
+              "source": "@site/docs/basics/Context.md",
+              "sourceDirName": "basics",
+              "slug": "/basics/Context",
+              "permalink": "/docs/basics/Context",
+              "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/basics/Context.md",
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "sidebar_position": 4
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Controllers",
+                "permalink": "/docs/basics/Controllers"
+              },
+              "next": {
+                "title": "Middleware",
+                "permalink": "/docs/basics/Middleware"
+              }
+            },
+            {
+              "unversionedId": "basics/Controllers",
+              "id": "basics/Controllers",
+              "isDocsHomePage": false,
+              "title": "Controllers",
+              "description": "Controllers are responsible for processing incoming requests and returning responses to the client.",
+              "source": "@site/docs/basics/Controllers.md",
+              "sourceDirName": "basics",
+              "slug": "/basics/Controllers",
+              "permalink": "/docs/basics/Controllers",
+              "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/basics/Controllers.md",
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Area",
+                "permalink": "/docs/basics/Area"
+              },
+              "next": {
+                "title": "Context, Request, Response",
+                "permalink": "/docs/basics/Context"
+              }
+            },
+            {
+              "unversionedId": "basics/DI",
+              "id": "basics/DI",
+              "isDocsHomePage": false,
+              "title": "Dependency injection",
+              "description": "Dependency injection (DI) is a mechanism for making objects that interact in an application loosely coupled. Such objects are linked through abstractions, such as interfaces, which makes the whole system more flexible, more adaptable, and more extensible.",
+              "source": "@site/docs/basics/DI.md",
+              "sourceDirName": "basics",
+              "slug": "/basics/DI",
+              "permalink": "/docs/basics/DI",
+              "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/basics/DI.md",
+              "version": "current",
+              "sidebarPosition": 6,
+              "frontMatter": {
+                "sidebar_position": 6
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Middleware",
+                "permalink": "/docs/basics/Middleware"
+              },
+              "next": {
+                "title": "Hooks",
+                "permalink": "/docs/basics/Hooks"
+              }
+            },
+            {
+              "unversionedId": "basics/Hooks",
+              "id": "basics/Hooks",
+              "isDocsHomePage": false,
+              "title": "Hooks",
+              "description": "Hooks - as well as Middleware is a function which is called before and after action is performed by controller. Hook is specified without a root and can be registered in Area, Controller, Action having access to their providers.",
+              "source": "@site/docs/basics/Hooks.md",
+              "sourceDirName": "basics",
+              "slug": "/basics/Hooks",
+              "permalink": "/docs/basics/Hooks",
+              "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/basics/Hooks.md",
+              "version": "current",
+              "sidebarPosition": 7,
+              "frontMatter": {
+                "sidebar_position": 7
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Dependency injection",
+                "permalink": "/docs/basics/DI"
+              },
+              "next": {
+                "title": "Render pages",
+                "permalink": "/docs/basics/Render pages"
+              }
+            },
+            {
+              "unversionedId": "basics/Middleware",
+              "id": "basics/Middleware",
+              "isDocsHomePage": false,
+              "title": "Middleware",
+              "description": "Middleware is a function that is called before and after controller's action is executed. Note, unlike Hook, Middleware has limited DI support because it is registered at the top level in place of the application itself.",
+              "source": "@site/docs/basics/Middleware.md",
+              "sourceDirName": "basics",
+              "slug": "/basics/Middleware",
+              "permalink": "/docs/basics/Middleware",
+              "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/basics/Middleware.md",
+              "version": "current",
+              "sidebarPosition": 5,
+              "frontMatter": {
+                "sidebar_position": 5
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Context, Request, Response",
+                "permalink": "/docs/basics/Context"
+              },
+              "next": {
+                "title": "Dependency injection",
+                "permalink": "/docs/basics/DI"
+              }
+            },
+            {
+              "unversionedId": "basics/Render pages",
+              "id": "basics/Render pages",
+              "isDocsHomePage": false,
+              "title": "Render pages",
+              "description": "Alosaur can support any html renderer. All you need to do is customize and implement the template renderer.",
+              "source": "@site/docs/basics/Render pages.md",
+              "sourceDirName": "basics",
+              "slug": "/basics/Render pages",
+              "permalink": "/docs/basics/Render pages",
+              "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/basics/Render pages.md",
+              "version": "current",
+              "sidebarPosition": 8,
+              "frontMatter": {
+                "sidebar_position": 8
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Hooks",
+                "permalink": "/docs/basics/Hooks"
+              },
+              "next": {
+                "title": "Security",
+                "permalink": "/docs/basics/Security"
+              }
+            },
+            {
+              "unversionedId": "basics/Security",
+              "id": "basics/Security",
+              "isDocsHomePage": false,
+              "title": "Security",
+              "description": "In Alosaur, this module includes several sub-modules. You also need to substitute HttpContext with SecurityContext in order to substitute it. You can see it below in the examples.",
+              "source": "@site/docs/basics/Security.md",
+              "sourceDirName": "basics",
+              "slug": "/basics/Security",
+              "permalink": "/docs/basics/Security",
+              "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/basics/Security.md",
+              "version": "current",
+              "sidebarPosition": 9,
+              "frontMatter": {
+                "sidebar_position": 9
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Render pages",
+                "permalink": "/docs/basics/Render pages"
+              },
+              "next": {
+                "title": "Standard Hooks",
+                "permalink": "/docs/basics/Standard Hooks"
+              }
+            },
+            {
+              "unversionedId": "basics/Standard Hooks",
+              "id": "basics/Standard Hooks",
+              "isDocsHomePage": false,
+              "title": "Standard Hooks",
+              "description": "Alosaur supports several standard hooks, some of which are shown below:",
+              "source": "@site/docs/basics/Standard Hooks.md",
+              "sourceDirName": "basics",
+              "slug": "/basics/Standard Hooks",
+              "permalink": "/docs/basics/Standard Hooks",
+              "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/basics/Standard Hooks.md",
+              "version": "current",
+              "sidebarPosition": 10,
+              "frontMatter": {
+                "sidebar_position": 10
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Security",
+                "permalink": "/docs/basics/Security"
+              },
+              "next": {
+                "title": "WebSocket",
+                "permalink": "/docs/techniques/WebSocket"
+              }
+            },
+            {
+              "unversionedId": "intro",
+              "id": "intro",
+              "isDocsHomePage": false,
+              "title": "Intro",
+              "description": "Alosaur is a framework for building scalable applications on Deno. Deno is primarily a modern host for running TypeScript/JavaScript code on a server machine and has its own advantages over others.",
+              "source": "@site/docs/intro.md",
+              "sourceDirName": ".",
+              "slug": "/intro",
+              "permalink": "/docs/intro",
+              "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/intro.md",
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "next": {
+                "title": "App",
+                "permalink": "/docs/basics/App"
+              }
+            },
+            {
+              "unversionedId": "sponsors",
+              "id": "sponsors",
+              "isDocsHomePage": false,
+              "title": "Sponsors ❤️",
+              "description": "Support us on OpenCollective (https://opencollective.com/alosaur)",
+              "source": "@site/docs/sponsors.mdx",
+              "sourceDirName": ".",
+              "slug": "/sponsors",
+              "permalink": "/docs/sponsors",
+              "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/sponsors.mdx",
+              "version": "current",
+              "sidebarPosition": 5,
+              "frontMatter": {
+                "sidebar_position": 5
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Alosaur Lite",
+                "permalink": "/docs/alosaur-lite"
+              }
+            },
+            {
+              "unversionedId": "techniques/CORS",
+              "id": "techniques/CORS",
+              "isDocsHomePage": false,
+              "title": "CORS",
+              "description": "Cross-Origin Resource Sharing (CORS) is a mechanism that uses additional HTTP headers to allow the user agent to obtain permissions to access selected resources from a server on a source (domain) other than the one the site is currently using. The user agent is said to make a cross-origin HTTP request if the source of the current document differs from the requested resource by domain, protocol, or port.",
+              "source": "@site/docs/techniques/CORS.md",
+              "sourceDirName": "techniques",
+              "slug": "/techniques/CORS",
+              "permalink": "/docs/techniques/CORS",
+              "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/techniques/CORS.md",
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "sidebar_position": 4
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "SPA (Single page application)",
+                "permalink": "/docs/techniques/SPA"
+              },
+              "next": {
+                "title": "Microservice",
+                "permalink": "/docs/techniques/Microservice"
+              }
+            },
+            {
+              "unversionedId": "techniques/Custom decorators",
+              "id": "techniques/Custom decorators",
+              "isDocsHomePage": false,
+              "title": "Custom decorators",
+              "description": "You can add any decorator and put it in the DI system.",
+              "source": "@site/docs/techniques/Custom decorators.md",
+              "sourceDirName": "techniques",
+              "slug": "/techniques/Custom decorators",
+              "permalink": "/docs/techniques/Custom decorators",
+              "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/techniques/Custom decorators.md",
+              "version": "current",
+              "sidebarPosition": 7,
+              "frontMatter": {
+                "sidebar_position": 7
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Database",
+                "permalink": "/docs/techniques/Database"
+              },
+              "next": {
+                "title": "OpenAPI",
+                "permalink": "/docs/techniques/OpenAPI"
+              }
+            },
+            {
+              "unversionedId": "techniques/Database",
+              "id": "techniques/Database",
+              "isDocsHomePage": false,
+              "title": "Database",
+              "description": "https://github.com/alosaur/alosaur/tree/master/examples/db",
+              "source": "@site/docs/techniques/Database.md",
+              "sourceDirName": "techniques",
+              "slug": "/techniques/Database",
+              "permalink": "/docs/techniques/Database",
+              "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/techniques/Database.md",
+              "version": "current",
+              "sidebarPosition": 6,
+              "frontMatter": {
+                "sidebar_position": 6
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Microservice",
+                "permalink": "/docs/techniques/Microservice"
+              },
+              "next": {
+                "title": "Custom decorators",
+                "permalink": "/docs/techniques/Custom decorators"
+              }
+            },
+            {
+              "unversionedId": "techniques/Microservice",
+              "id": "techniques/Microservice",
+              "isDocsHomePage": false,
+              "title": "Microservice",
+              "description": "Microservices in Alosaur are implemented as a server, but use a different transport, not HTTP, to communicate between clients.",
+              "source": "@site/docs/techniques/Microservice.md",
+              "sourceDirName": "techniques",
+              "slug": "/techniques/Microservice",
+              "permalink": "/docs/techniques/Microservice",
+              "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/techniques/Microservice.md",
+              "version": "current",
+              "sidebarPosition": 5,
+              "frontMatter": {
+                "sidebar_position": 5
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "CORS",
+                "permalink": "/docs/techniques/CORS"
+              },
+              "next": {
+                "title": "Database",
+                "permalink": "/docs/techniques/Database"
+              }
+            },
+            {
+              "unversionedId": "techniques/OpenAPI",
+              "id": "techniques/OpenAPI",
+              "isDocsHomePage": false,
+              "title": "OpenAPI",
+              "description": "OpenAPI is a formalized specification and a complete framework for describing, creating, using, and visualizing REST Web services. The goal is to allow client systems and documentation to synchronize their updates with changes on the server. This is achieved by integrating methods, parameters, models, and other elements through OpenAPI with the server software and keeping them in sync all the time",
+              "source": "@site/docs/techniques/OpenAPI.md",
+              "sourceDirName": "techniques",
+              "slug": "/techniques/OpenAPI",
+              "permalink": "/docs/techniques/OpenAPI",
+              "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/techniques/OpenAPI.md",
+              "version": "current",
+              "sidebarPosition": 8,
+              "frontMatter": {
+                "sidebar_position": 8
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Custom decorators",
+                "permalink": "/docs/techniques/Custom decorators"
+              },
+              "next": {
+                "title": "Alosaur Lite",
+                "permalink": "/docs/alosaur-lite"
+              }
+            },
+            {
+              "unversionedId": "techniques/SPA",
+              "id": "techniques/SPA",
+              "isDocsHomePage": false,
+              "title": "SPA (Single page application)",
+              "description": "Single Page Application",
+              "source": "@site/docs/techniques/SPA.md",
+              "sourceDirName": "techniques",
+              "slug": "/techniques/SPA",
+              "permalink": "/docs/techniques/SPA",
+              "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/techniques/SPA.md",
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "SSE (Server Sent Events)",
+                "permalink": "/docs/techniques/SSE"
+              },
+              "next": {
+                "title": "CORS",
+                "permalink": "/docs/techniques/CORS"
+              }
+            },
+            {
+              "unversionedId": "techniques/SSE",
+              "id": "techniques/SSE",
+              "isDocsHomePage": false,
+              "title": "SSE (Server Sent Events)",
+              "description": "Currently not working with Deno native http",
+              "source": "@site/docs/techniques/SSE.md",
+              "sourceDirName": "techniques",
+              "slug": "/techniques/SSE",
+              "permalink": "/docs/techniques/SSE",
+              "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/techniques/SSE.md",
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "WebSocket",
+                "permalink": "/docs/techniques/WebSocket"
+              },
+              "next": {
+                "title": "SPA (Single page application)",
+                "permalink": "/docs/techniques/SPA"
+              }
+            },
+            {
+              "unversionedId": "techniques/WebSocket",
+              "id": "techniques/WebSocket",
+              "isDocsHomePage": false,
+              "title": "WebSocket",
+              "description": "WebSocket is a communication protocol over a TCP connection for real-time messaging between a browser and a web server.",
+              "source": "@site/docs/techniques/WebSocket.md",
+              "sourceDirName": "techniques",
+              "slug": "/techniques/WebSocket",
+              "permalink": "/docs/techniques/WebSocket",
+              "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/techniques/WebSocket.md",
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Standard Hooks",
+                "permalink": "/docs/basics/Standard Hooks"
+              },
+              "next": {
+                "title": "SSE (Server Sent Events)",
+                "permalink": "/docs/techniques/SSE"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-blog": {
+    "default": {
+      "blogPosts": [],
+      "blogListPaginated": [],
+      "blogTags": {},
+      "blogTagsListPath": null
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "jsx",
+        "permalink": "/",
+        "source": "@site/src/pages/index.js"
+      },
+      {
+        "type": "mdx",
+        "permalink": "/markdown-page",
+        "source": "@site/src/pages/markdown-page.md"
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {
+    "default": null
+  },
+  "docusaurus-theme-classic": {
+    "default": null
+  }
+}

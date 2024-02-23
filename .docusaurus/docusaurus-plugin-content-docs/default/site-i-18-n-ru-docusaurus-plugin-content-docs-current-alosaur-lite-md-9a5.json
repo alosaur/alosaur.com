@@ -1,0 +1,26 @@
+{
+  "unversionedId": "alosaur-lite",
+  "id": "alosaur-lite",
+  "isDocsHomePage": false,
+  "title": "Alosaur Lite",
+  "description": "Intro",
+  "source": "@site/i18n/ru/docusaurus-plugin-content-docs/current/alosaur-lite.md",
+  "sourceDirName": ".",
+  "slug": "/alosaur-lite",
+  "permalink": "/ru/docs/alosaur-lite",
+  "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/alosaur-lite.md",
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "OpenAPI",
+    "permalink": "/ru/docs/techniques/OpenAPI"
+  },
+  "next": {
+    "title": "Sponsors ❤️",
+    "permalink": "/ru/docs/sponsors"
+  }
+}

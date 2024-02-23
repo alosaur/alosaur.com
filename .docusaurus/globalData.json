@@ -1,0 +1,123 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/ru/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/ru/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "alosaur-lite",
+              "path": "/ru/docs/alosaur-lite",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "basics/App",
+              "path": "/ru/docs/basics/App",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "basics/Area",
+              "path": "/ru/docs/basics/Area",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "basics/Context",
+              "path": "/ru/docs/basics/Context",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "basics/Controllers",
+              "path": "/ru/docs/basics/Controllers",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "basics/DI",
+              "path": "/ru/docs/basics/DI",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "basics/Hooks",
+              "path": "/ru/docs/basics/Hooks",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "basics/Middleware",
+              "path": "/ru/docs/basics/Middleware",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "basics/Render pages",
+              "path": "/ru/docs/basics/Render pages",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "basics/Security",
+              "path": "/ru/docs/basics/Security",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "basics/Standard Hooks",
+              "path": "/ru/docs/basics/Standard Hooks",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/ru/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "sponsors",
+              "path": "/ru/docs/sponsors",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "techniques/CORS",
+              "path": "/ru/docs/techniques/CORS",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "techniques/Custom decorators",
+              "path": "/ru/docs/techniques/Custom decorators",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "techniques/Database",
+              "path": "/ru/docs/techniques/Database",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "techniques/Microservice",
+              "path": "/ru/docs/techniques/Microservice",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "techniques/OpenAPI",
+              "path": "/ru/docs/techniques/OpenAPI",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "techniques/SPA",
+              "path": "/ru/docs/techniques/SPA",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "techniques/SSE",
+              "path": "/ru/docs/techniques/SSE",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "techniques/WebSocket",
+              "path": "/ru/docs/techniques/WebSocket",
+              "sidebar": "tutorialSidebar"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "techniques/Microservice",
+  "id": "techniques/Microservice",
+  "isDocsHomePage": false,
+  "title": "Microservice",
+  "description": "Microservices in Alosaur are implemented as a server, but use a different transport, not HTTP, to communicate between clients.",
+  "source": "@site/docs/techniques/Microservice.md",
+  "sourceDirName": "techniques",
+  "slug": "/techniques/Microservice",
+  "permalink": "/docs/techniques/Microservice",
+  "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/techniques/Microservice.md",
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "CORS",
+    "permalink": "/docs/techniques/CORS"
+  },
+  "next": {
+    "title": "Database",
+    "permalink": "/docs/techniques/Database"
+  }
+}

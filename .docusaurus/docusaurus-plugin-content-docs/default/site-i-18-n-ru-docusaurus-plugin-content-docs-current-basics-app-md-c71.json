@@ -1,0 +1,26 @@
+{
+  "unversionedId": "basics/App",
+  "id": "basics/App",
+  "isDocsHomePage": false,
+  "title": "App",
+  "description": "Для создания приложения в Alosaur необходимо воспользоваться конструктором класса App.",
+  "source": "@site/i18n/ru/docusaurus-plugin-content-docs/current/basics/App.md",
+  "sourceDirName": "basics",
+  "slug": "/basics/App",
+  "permalink": "/ru/docs/basics/App",
+  "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/basics/App.md",
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Intro",
+    "permalink": "/ru/docs/intro"
+  },
+  "next": {
+    "title": "Area",
+    "permalink": "/ru/docs/basics/Area"
+  }
+}

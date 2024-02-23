@@ -1,0 +1,26 @@
+{
+  "unversionedId": "basics/Middleware",
+  "id": "basics/Middleware",
+  "isDocsHomePage": false,
+  "title": "Middleware",
+  "description": "Middleware - это функция которая вызывается до и после выполнения action у controller. Внимание, в отличии от Hook, Middleware ограниченно поддерживает DI, так как регистрируется на верхнем уровне в месте с самим приложением.",
+  "source": "@site/i18n/ru/docusaurus-plugin-content-docs/current/basics/Middleware.md",
+  "sourceDirName": "basics",
+  "slug": "/basics/Middleware",
+  "permalink": "/ru/docs/basics/Middleware",
+  "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/basics/Middleware.md",
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Context, Request, Response",
+    "permalink": "/ru/docs/basics/Context"
+  },
+  "next": {
+    "title": "Dependency injection",
+    "permalink": "/ru/docs/basics/DI"
+  }
+}

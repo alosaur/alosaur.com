@@ -1,0 +1,26 @@
+{
+  "unversionedId": "basics/Controllers",
+  "id": "basics/Controllers",
+  "isDocsHomePage": false,
+  "title": "Controllers",
+  "description": "Контроллеры отвечают за обработку входящих запросов и возврат ответов клиенту.",
+  "source": "@site/i18n/ru/docusaurus-plugin-content-docs/current/basics/Controllers.md",
+  "sourceDirName": "basics",
+  "slug": "/basics/Controllers",
+  "permalink": "/ru/docs/basics/Controllers",
+  "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/basics/Controllers.md",
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Area",
+    "permalink": "/ru/docs/basics/Area"
+  },
+  "next": {
+    "title": "Context, Request, Response",
+    "permalink": "/ru/docs/basics/Context"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "basics/Area",
+  "id": "basics/Area",
+  "isDocsHomePage": false,
+  "title": "Area",
+  "description": "This is the application area that registers controllers and defines route behavior for the controllers in it.",
+  "source": "@site/docs/basics/Area.md",
+  "sourceDirName": "basics",
+  "slug": "/basics/Area",
+  "permalink": "/docs/basics/Area",
+  "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/basics/Area.md",
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "App",
+    "permalink": "/docs/basics/App"
+  },
+  "next": {
+    "title": "Controllers",
+    "permalink": "/docs/basics/Controllers"
+  }
+}

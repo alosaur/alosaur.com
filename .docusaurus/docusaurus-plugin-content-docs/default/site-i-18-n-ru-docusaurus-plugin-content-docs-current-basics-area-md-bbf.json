@@ -1,0 +1,26 @@
+{
+  "unversionedId": "basics/Area",
+  "id": "basics/Area",
+  "isDocsHomePage": false,
+  "title": "Area",
+  "description": "Это области приложения в котором регистрируются контроллеры и определяют поведение маршрутов для контроллеров в них.",
+  "source": "@site/i18n/ru/docusaurus-plugin-content-docs/current/basics/Area.md",
+  "sourceDirName": "basics",
+  "slug": "/basics/Area",
+  "permalink": "/ru/docs/basics/Area",
+  "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/basics/Area.md",
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "App",
+    "permalink": "/ru/docs/basics/App"
+  },
+  "next": {
+    "title": "Controllers",
+    "permalink": "/ru/docs/basics/Controllers"
+  }
+}

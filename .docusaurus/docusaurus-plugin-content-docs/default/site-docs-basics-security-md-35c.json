@@ -1,0 +1,26 @@
+{
+  "unversionedId": "basics/Security",
+  "id": "basics/Security",
+  "isDocsHomePage": false,
+  "title": "Security",
+  "description": "In Alosaur, this module includes several sub-modules. You also need to substitute HttpContext with SecurityContext in order to substitute it. You can see it below in the examples.",
+  "source": "@site/docs/basics/Security.md",
+  "sourceDirName": "basics",
+  "slug": "/basics/Security",
+  "permalink": "/docs/basics/Security",
+  "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/basics/Security.md",
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "sidebar_position": 9
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Render pages",
+    "permalink": "/docs/basics/Render pages"
+  },
+  "next": {
+    "title": "Standard Hooks",
+    "permalink": "/docs/basics/Standard Hooks"
+  }
+}

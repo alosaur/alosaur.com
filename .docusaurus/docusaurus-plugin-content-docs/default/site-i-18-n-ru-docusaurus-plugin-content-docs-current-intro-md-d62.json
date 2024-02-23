@@ -1,0 +1,22 @@
+{
+  "unversionedId": "intro",
+  "id": "intro",
+  "isDocsHomePage": false,
+  "title": "Intro",
+  "description": "Alosaur - это фреймворк чтобы строить масштабируемые приложения на Deno. Deno - в первую очередь это современный хост для выполнения TypeScript/ JS кода на серверной машине имеющий свои преимущества над другими. Deno",
+  "source": "@site/i18n/ru/docusaurus-plugin-content-docs/current/intro.md",
+  "sourceDirName": ".",
+  "slug": "/intro",
+  "permalink": "/ru/docs/intro",
+  "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/intro.md",
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "App",
+    "permalink": "/ru/docs/basics/App"
+  }
+}

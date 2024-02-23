@@ -1,0 +1,26 @@
+{
+  "unversionedId": "techniques/SPA",
+  "id": "techniques/SPA",
+  "isDocsHomePage": false,
+  "title": "SPA (Single page application)",
+  "description": "Single Page Application",
+  "source": "@site/docs/techniques/SPA.md",
+  "sourceDirName": "techniques",
+  "slug": "/techniques/SPA",
+  "permalink": "/docs/techniques/SPA",
+  "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/techniques/SPA.md",
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SSE (Server Sent Events)",
+    "permalink": "/docs/techniques/SSE"
+  },
+  "next": {
+    "title": "CORS",
+    "permalink": "/docs/techniques/CORS"
+  }
+}

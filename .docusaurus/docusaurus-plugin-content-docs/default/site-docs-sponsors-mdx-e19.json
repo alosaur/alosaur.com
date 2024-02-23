@@ -1,0 +1,22 @@
+{
+  "unversionedId": "sponsors",
+  "id": "sponsors",
+  "isDocsHomePage": false,
+  "title": "Sponsors ❤️",
+  "description": "Support us on OpenCollective (https://opencollective.com/alosaur)",
+  "source": "@site/docs/sponsors.mdx",
+  "sourceDirName": ".",
+  "slug": "/sponsors",
+  "permalink": "/docs/sponsors",
+  "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/sponsors.mdx",
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Alosaur Lite",
+    "permalink": "/docs/alosaur-lite"
+  }
+}

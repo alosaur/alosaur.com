@@ -1,0 +1,26 @@
+{
+  "unversionedId": "basics/Middleware",
+  "id": "basics/Middleware",
+  "isDocsHomePage": false,
+  "title": "Middleware",
+  "description": "Middleware is a function that is called before and after controller's action is executed. Note, unlike Hook, Middleware has limited DI support because it is registered at the top level in place of the application itself.",
+  "source": "@site/docs/basics/Middleware.md",
+  "sourceDirName": "basics",
+  "slug": "/basics/Middleware",
+  "permalink": "/docs/basics/Middleware",
+  "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/basics/Middleware.md",
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Context, Request, Response",
+    "permalink": "/docs/basics/Context"
+  },
+  "next": {
+    "title": "Dependency injection",
+    "permalink": "/docs/basics/DI"
+  }
+}

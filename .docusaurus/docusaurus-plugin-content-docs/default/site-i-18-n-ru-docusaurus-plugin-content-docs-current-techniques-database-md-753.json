@@ -1,0 +1,26 @@
+{
+  "unversionedId": "techniques/Database",
+  "id": "techniques/Database",
+  "isDocsHomePage": false,
+  "title": "Database",
+  "description": "https://github.com/alosaur/alosaur/tree/master/examples/db",
+  "source": "@site/i18n/ru/docusaurus-plugin-content-docs/current/techniques/Database.md",
+  "sourceDirName": "techniques",
+  "slug": "/techniques/Database",
+  "permalink": "/ru/docs/techniques/Database",
+  "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/techniques/Database.md",
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Microservice",
+    "permalink": "/ru/docs/techniques/Microservice"
+  },
+  "next": {
+    "title": "Custom decorators",
+    "permalink": "/ru/docs/techniques/Custom decorators"
+  }
+}

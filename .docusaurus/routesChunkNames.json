@@ -1,0 +1,98 @@
+{
+  "/ru/-8ba": {
+    "component": "c4f5d8e4",
+    "config": "5e9f5e1a"
+  },
+  "/ru/markdown-page-361": {
+    "component": "1f391b9e",
+    "content": "393be207"
+  },
+  "/ru/docs-d95": {
+    "component": "1be78505",
+    "versionMetadata": "935f2afb"
+  },
+  "/ru/docs/alosaur-lite-348": {
+    "component": "17896441",
+    "content": "9a5a72da"
+  },
+  "/ru/docs/basics/App-137": {
+    "component": "17896441",
+    "content": "c710e113"
+  },
+  "/ru/docs/basics/Area-786": {
+    "component": "17896441",
+    "content": "bbfde6ea"
+  },
+  "/ru/docs/basics/Context-e4e": {
+    "component": "17896441",
+    "content": "1c59a071"
+  },
+  "/ru/docs/basics/Controllers-8f8": {
+    "component": "17896441",
+    "content": "00c26f11"
+  },
+  "/ru/docs/basics/DI-7f0": {
+    "component": "17896441",
+    "content": "cac12386"
+  },
+  "/ru/docs/basics/Hooks-6e2": {
+    "component": "17896441",
+    "content": "eb459ce9"
+  },
+  "/ru/docs/basics/Middleware-fa7": {
+    "component": "17896441",
+    "content": "088fc775"
+  },
+  "/ru/docs/basics/Render pages-035": {
+    "component": "17896441",
+    "content": "638fb853"
+  },
+  "/ru/docs/basics/Security-813": {
+    "component": "17896441",
+    "content": "7d930cb7"
+  },
+  "/ru/docs/basics/Standard Hooks-041": {
+    "component": "17896441",
+    "content": "cafd477b"
+  },
+  "/ru/docs/intro-a0f": {
+    "component": "17896441",
+    "content": "d62e8a9b"
+  },
+  "/ru/docs/sponsors-7cf": {
+    "component": "17896441",
+    "content": "fed612f1"
+  },
+  "/ru/docs/techniques/CORS-cea": {
+    "component": "17896441",
+    "content": "e973ea77"
+  },
+  "/ru/docs/techniques/Custom decorators-f28": {
+    "component": "17896441",
+    "content": "f10e1b2e"
+  },
+  "/ru/docs/techniques/Database-39e": {
+    "component": "17896441",
+    "content": "753851e6"
+  },
+  "/ru/docs/techniques/Microservice-5c0": {
+    "component": "17896441",
+    "content": "5145cdde"
+  },
+  "/ru/docs/techniques/OpenAPI-e7b": {
+    "component": "17896441",
+    "content": "55ef3a9c"
+  },
+  "/ru/docs/techniques/SPA-4dc": {
+    "component": "17896441",
+    "content": "1c8b7d5e"
+  },
+  "/ru/docs/techniques/SSE-e37": {
+    "component": "17896441",
+    "content": "b3362349"
+  },
+  "/ru/docs/techniques/WebSocket-d15": {
+    "component": "17896441",
+    "content": "1d7e11c6"
+  }
+}

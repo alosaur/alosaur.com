@@ -1,0 +1,26 @@
+{
+  "unversionedId": "techniques/WebSocket",
+  "id": "techniques/WebSocket",
+  "isDocsHomePage": false,
+  "title": "WebSocket",
+  "description": "WebSocket is a communication protocol over a TCP connection for real-time messaging between a browser and a web server.",
+  "source": "@site/docs/techniques/WebSocket.md",
+  "sourceDirName": "techniques",
+  "slug": "/techniques/WebSocket",
+  "permalink": "/docs/techniques/WebSocket",
+  "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/techniques/WebSocket.md",
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Standard Hooks",
+    "permalink": "/docs/basics/Standard Hooks"
+  },
+  "next": {
+    "title": "SSE (Server Sent Events)",
+    "permalink": "/docs/techniques/SSE"
+  }
+}

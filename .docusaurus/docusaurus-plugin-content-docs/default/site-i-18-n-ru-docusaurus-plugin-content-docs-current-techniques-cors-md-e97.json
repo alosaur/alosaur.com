@@ -1,0 +1,26 @@
+{
+  "unversionedId": "techniques/CORS",
+  "id": "techniques/CORS",
+  "isDocsHomePage": false,
+  "title": "CORS",
+  "description": "Cross-Origin Resource Sharing (CORS) — механизм, использующий дополнительные HTTP-заголовки, чтобы дать возможность агенту пользователя получать разрешения на доступ к выбранным ресурсам с сервера на источнике (домене), отличном от того, что сайт использует в данный момент. Говорят, что агент пользователя делает запрос с другого источника (cross-origin HTTP request), если источник текущего документа отличается от запрашиваемого ресурса доменом, протоколом или портом.",
+  "source": "@site/i18n/ru/docusaurus-plugin-content-docs/current/techniques/CORS.md",
+  "sourceDirName": "techniques",
+  "slug": "/techniques/CORS",
+  "permalink": "/ru/docs/techniques/CORS",
+  "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/techniques/CORS.md",
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SPA (Single page application)",
+    "permalink": "/ru/docs/techniques/SPA"
+  },
+  "next": {
+    "title": "Microservice",
+    "permalink": "/ru/docs/techniques/Microservice"
+  }
+}

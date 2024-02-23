@@ -1,0 +1,22 @@
+{
+  "unversionedId": "intro",
+  "id": "intro",
+  "isDocsHomePage": false,
+  "title": "Intro",
+  "description": "Alosaur is a framework for building scalable applications on Deno. Deno is primarily a modern host for running TypeScript/JavaScript code on a server machine and has its own advantages over others.",
+  "source": "@site/docs/intro.md",
+  "sourceDirName": ".",
+  "slug": "/intro",
+  "permalink": "/docs/intro",
+  "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/intro.md",
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "App",
+    "permalink": "/docs/basics/App"
+  }
+}

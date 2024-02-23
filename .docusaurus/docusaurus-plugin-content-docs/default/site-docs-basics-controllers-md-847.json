@@ -1,0 +1,26 @@
+{
+  "unversionedId": "basics/Controllers",
+  "id": "basics/Controllers",
+  "isDocsHomePage": false,
+  "title": "Controllers",
+  "description": "Controllers are responsible for processing incoming requests and returning responses to the client.",
+  "source": "@site/docs/basics/Controllers.md",
+  "sourceDirName": "basics",
+  "slug": "/basics/Controllers",
+  "permalink": "/docs/basics/Controllers",
+  "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/basics/Controllers.md",
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Area",
+    "permalink": "/docs/basics/Area"
+  },
+  "next": {
+    "title": "Context, Request, Response",
+    "permalink": "/docs/basics/Context"
+  }
+}

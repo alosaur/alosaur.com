@@ -1,0 +1,26 @@
+{
+  "unversionedId": "basics/Security",
+  "id": "basics/Security",
+  "isDocsHomePage": false,
+  "title": "Security",
+  "description": "В Alosaur этот модуль включает несколько подмодулей. Так же для его подмены вам необходимо подменить HttpContext на SecurityContext. Ниже в примерах вы это можете увидеть.",
+  "source": "@site/i18n/ru/docusaurus-plugin-content-docs/current/basics/Security.md",
+  "sourceDirName": "basics",
+  "slug": "/basics/Security",
+  "permalink": "/ru/docs/basics/Security",
+  "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/basics/Security.md",
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "sidebar_position": 9
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Render pages",
+    "permalink": "/ru/docs/basics/Render pages"
+  },
+  "next": {
+    "title": "Standard Hooks",
+    "permalink": "/ru/docs/basics/Standard Hooks"
+  }
+}

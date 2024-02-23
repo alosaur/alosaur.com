@@ -1,0 +1,26 @@
+{
+  "unversionedId": "basics/Standard Hooks",
+  "id": "basics/Standard Hooks",
+  "isDocsHomePage": false,
+  "title": "Standard Hooks",
+  "description": "Alosaur supports several standard hooks, some of which are shown below:",
+  "source": "@site/docs/basics/Standard Hooks.md",
+  "sourceDirName": "basics",
+  "slug": "/basics/Standard Hooks",
+  "permalink": "/ru/docs/basics/Standard Hooks",
+  "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/basics/Standard Hooks.md",
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "sidebar_position": 10
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Security",
+    "permalink": "/ru/docs/basics/Security"
+  },
+  "next": {
+    "title": "WebSocket",
+    "permalink": "/ru/docs/techniques/WebSocket"
+  }
+}

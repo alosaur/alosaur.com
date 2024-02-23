@@ -1,0 +1,26 @@
+{
+  "unversionedId": "techniques/SSE",
+  "id": "techniques/SSE",
+  "isDocsHomePage": false,
+  "title": "SSE (Server Sent Events)",
+  "description": "В данный момент не работает с Deno native http",
+  "source": "@site/i18n/ru/docusaurus-plugin-content-docs/current/techniques/SSE.md",
+  "sourceDirName": "techniques",
+  "slug": "/techniques/SSE",
+  "permalink": "/ru/docs/techniques/SSE",
+  "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/techniques/SSE.md",
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "WebSocket",
+    "permalink": "/ru/docs/techniques/WebSocket"
+  },
+  "next": {
+    "title": "SPA (Single page application)",
+    "permalink": "/ru/docs/techniques/SPA"
+  }
+}

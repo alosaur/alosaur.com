@@ -1,0 +1,26 @@
+{
+  "unversionedId": "basics/DI",
+  "id": "basics/DI",
+  "isDocsHomePage": false,
+  "title": "Dependency injection",
+  "description": "Dependency injection (DI) или внедрение зависимостей представляет механизм, который позволяет сделать взаимодействующие в приложении объекты слабосвязанными. Такие объекты связаны между собой через абстракции, например, через интерфейсы, что делает всю систему более гибкой, более адаптируемой и расширяемой.",
+  "source": "@site/i18n/ru/docusaurus-plugin-content-docs/current/basics/DI.md",
+  "sourceDirName": "basics",
+  "slug": "/basics/DI",
+  "permalink": "/ru/docs/basics/DI",
+  "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/basics/DI.md",
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Middleware",
+    "permalink": "/ru/docs/basics/Middleware"
+  },
+  "next": {
+    "title": "Hooks",
+    "permalink": "/ru/docs/basics/Hooks"
+  }
+}

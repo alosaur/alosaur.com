@@ -1,0 +1,26 @@
+{
+  "unversionedId": "techniques/OpenAPI",
+  "id": "techniques/OpenAPI",
+  "isDocsHomePage": false,
+  "title": "OpenAPI",
+  "description": "OpenAPI is a formalized specification and a complete framework for describing, creating, using, and visualizing REST Web services. The goal is to allow client systems and documentation to synchronize their updates with changes on the server. This is achieved by integrating methods, parameters, models, and other elements through OpenAPI with the server software and keeping them in sync all the time",
+  "source": "@site/docs/techniques/OpenAPI.md",
+  "sourceDirName": "techniques",
+  "slug": "/techniques/OpenAPI",
+  "permalink": "/docs/techniques/OpenAPI",
+  "editUrl": "https://github.com/alosaur/alosaur.github.io/edit/main/docs/techniques/OpenAPI.md",
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "sidebar_position": 8
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Custom decorators",
+    "permalink": "/docs/techniques/Custom decorators"
+  },
+  "next": {
+    "title": "Alosaur Lite",
+    "permalink": "/docs/alosaur-lite"
+  }
+}
